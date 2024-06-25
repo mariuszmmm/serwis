@@ -1,8 +1,10 @@
+import { Wrapper } from "./styled";
+
 const App = () => {
   return (
-    <div>
+    <Wrapper>
       <h1>This is react-starter app</h1>
-    </div>
+    </Wrapper>
   );
 };
 
