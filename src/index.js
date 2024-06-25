@@ -5,6 +5,7 @@ import store from "./config/store";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./config/theme";
 import App from "./core/App";
+import { Normalize } from "styled-normalize";
 import GlobalStyle from "./core/GlobalStyle";
 import reportWebVitals from "./reportWebVitals";
 
@@ -13,6 +14,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
+        <Normalize />
         <GlobalStyle />
         <App />
       </ThemeProvider>
