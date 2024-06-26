@@ -1,12 +1,16 @@
 import styled, { css } from "styled-components";
 
-export const Header = styled.h1`
-  color: red;
+export const Wrapper = styled.div`
+  margin: 20px;
+`;
+
+export const Header = styled.h2`
+  color: ${({ theme }) => theme.color.red};
 
   ${({ $isEven }) =>
     $isEven &&
     css`
-      color: blue;
+      color: ${({ theme }) => theme.color.blue};
     `}
 `;
 

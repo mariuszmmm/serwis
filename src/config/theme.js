@@ -11,10 +11,10 @@ export const theme = {
     bold: 700,
   },
   color: {
-    white: "#FFFFFF",
-    lightGrey: "#F5F5FA",
-    grey: "#E4E6F0",
+    red: "#E32A2A",
+    blue: "#2F80ED",
+    green: "#27AE60",
+    yellow: "#F2C94C",
     darkerGrey: "#7E839A",
-    black: "#000000",
   },
 };
