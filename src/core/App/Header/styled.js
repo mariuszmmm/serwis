@@ -53,12 +53,14 @@ export const StyledNavLink = styled(NavLink)`
   padding: 10px;
   transition: all 0.3s ease;
   display: flex;
+  border-radius: 5px;
+
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 5px;
   }
 
+  &.active,
   &:hover {
     background-color: ${({ theme }) => theme.color.emperor};
-    border-radius: 5px;
   }
 `;
