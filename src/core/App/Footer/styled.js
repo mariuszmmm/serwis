@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as facebookIcon } from "../../../assets/images/facebook.svg";
-import { ReactComponent as instagramIcon } from "../../../assets/images/instagram.svg";
+import { ReactComponent as googleIcon } from "../../../assets/images/google.svg";
 
 export const FooterWrapper = styled.footer`
   background-color: ${({ theme }) => theme.color.primary};
@@ -22,6 +22,7 @@ export const FooterContainer = styled.div`
 
 export const FooterText = styled.p`
   margin: 0;
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
 `;
 
 export const SocialIcons = styled.div`
@@ -49,4 +50,4 @@ const styledIcon = (icon) => styled(icon)`
 `;
 
 export const FacebookIcon = styledIcon(facebookIcon);
-export const InstagramIcon = styledIcon(instagramIcon);
+export const GoogleIcon = styledIcon(googleIcon);

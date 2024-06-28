@@ -19,6 +19,10 @@ export const HeaderContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  height: 100%;
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    padding: 0 10px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -31,6 +35,15 @@ export const Nav = styled.nav`
 
   ul li {
     margin: 0 10px;
+    font-size: clamp(0.3rem, 1.6vw, 1.4rem);
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+      margin: 0 5px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+      margin: 0;
+    }
   }
 `;
 
@@ -39,6 +52,10 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   padding: 10px;
   transition: all 0.3s ease;
+  display: flex;
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    padding: 5px;
+  }
 
   &:hover {
     background-color: ${({ theme }) => theme.color.emperor};

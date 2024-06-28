@@ -2,10 +2,11 @@ import {
   PricingContainer,
   PricingSection,
   PricingTable,
-  PricingTd,
   PricingTh,
   PricingTitle,
 } from "./styled";
+import { PricingRow } from "./PricingRow";
+import { serwis } from "../../utils/serwis";
 export const Pricing = () => {
   return (
     <PricingSection>
@@ -19,22 +20,9 @@ export const Pricing = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <PricingTd>Naprawa pralki</PricingTd>
-              <PricingTd>od 100 PLN</PricingTd>
-            </tr>
-            <tr>
-              <PricingTd>Naprawa ekspresu do kawy</PricingTd>
-              <PricingTd>od 120 PLN</PricingTd>
-            </tr>
-            <tr>
-              <PricingTd>Serwis i konserwacja</PricingTd>
-              <PricingTd>od 80 PLN</PricingTd>
-            </tr>
-            <tr>
-              <PricingTd>Konsultacje i doradztwo</PricingTd>
-              <PricingTd>50 PLN/h</PricingTd>
-            </tr>
+            {serwis.pricing.map((pri, index) => (
+              <PricingRow item={pri} key={index} />
+            ))}
           </tbody>
         </PricingTable>
       </PricingContainer>

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const PricingSection = styled.section`
-  background-color: ${({ theme }) => theme.color.background};
   padding: 100px 0;
   text-align: center;
   min-height: calc(100vh - 50px);
@@ -26,10 +25,5 @@ export const PricingTable = styled.table`
 export const PricingTh = styled.th`
   padding: 15px;
   background-color: ${({ theme }) => theme.color.tableHeader};
-  border: 1px solid ${({ theme }) => theme.color.border};
-`;
-
-export const PricingTd = styled.td`
-  padding: 15px;
   border: 1px solid ${({ theme }) => theme.color.border};
 `;

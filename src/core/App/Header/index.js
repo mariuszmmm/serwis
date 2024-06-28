@@ -1,10 +1,11 @@
 import { HeaderContainer, HeaderWrapper, Nav, StyledNavLink } from "./styled";
 import { Logo } from "../../../common/Logo";
+import { serwis } from "../../../utils/serwis";
 export const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderContainer>
-        <Logo>Serwis RTV i AGD</Logo>
+        <Logo>{serwis.name}</Logo>
         <Nav>
           <ul>
             <li>

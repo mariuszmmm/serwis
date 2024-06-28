@@ -6,8 +6,9 @@ import {
   SocialIcon,
   SocialIcons,
   FacebookIcon,
-  InstagramIcon,
+  GoogleIcon,
 } from "./styled";
+import { serwis } from "../../../utils/serwis";
 
 export const Footer = () => {
   return (
@@ -17,11 +18,11 @@ export const Footer = () => {
           &copy; 2024 Naprawa AGD. Wszelkie prawa zastrzeżone.
         </FooterText>
         <SocialIcons>
-          <SocialIcon href="" target="_blank">
+          <SocialIcon href={serwis.url.facebook} target="_blank">
             <FacebookIcon />
           </SocialIcon>
-          <SocialIcon href="" target="_blank">
-            <InstagramIcon />
+          <SocialIcon href={serwis.url.google} target="_blank">
+            <GoogleIcon />
           </SocialIcon>
         </SocialIcons>
       </FooterContainer>

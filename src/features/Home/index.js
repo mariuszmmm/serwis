@@ -1,15 +1,24 @@
-import { Hero, HeroButton, HeroContainer, HeroText, HeroTitle } from "./styled";
+import {
+  Hero,
+  HeroButton,
+  HeroContainer,
+  HeroText,
+  HeroTitle,
+  StyledLink,
+} from "./styled";
+import { serwis } from "../../utils/serwis";
 
 export const Home = () => {
   return (
     <Hero>
       <HeroContainer>
         <HeroTitle>
-          Profesjonalna naprawa pralek <br />i ekspresów do kawy
+          {serwis.header[0]} <br />
+          {serwis.header[1]}
         </HeroTitle>
-        <HeroText>Rzetelnie, szybko i skutecznie!</HeroText>
-        <HeroButton href="tel:+48123456789">Zadzwoń teraz</HeroButton>
-        <HeroButton href="#contact">Umów wizytę</HeroButton>
+        <HeroText> {serwis.subheader}</HeroText>
+        <HeroButton href={`tel:${serwis.phone}`}>Zadzwoń teraz</HeroButton>
+        <StyledLink to="/contact">Umów wizytę</StyledLink>
       </HeroContainer>
     </Hero>
   );

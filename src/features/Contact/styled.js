@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ContactSection = styled.section`
-  background-color: ${({ theme }) => theme.color.background};
+  display: flex;
+  justify-content: center;
   padding: 100px 0;
   text-align: center;
   min-height: calc(100vh - 50px);
@@ -10,6 +11,7 @@ export const ContactSection = styled.section`
 export const ContactContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
+  margin: 0 10px;
 `;
 
 export const ContactTitle = styled.h2`
@@ -69,5 +71,12 @@ export const ContactInfo = styled.div`
 
 export const ContactText = styled.p`
   font-size: 1.2rem;
-  margin-bottom: 10px;
+`;
+
+export const Iframe = styled.iframe`
+  margin-top: 20px;
+  width: 600px;
+  height: 450px;
+  border: none;
+  max-width: 90vw;
 `;

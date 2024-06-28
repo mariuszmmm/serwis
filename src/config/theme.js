@@ -21,7 +21,7 @@ export const theme = {
     button: "#ff8c00",
     buttonHover: "#ff6f00",
     border: "#cccccc",
-    tableHeader: "#e0e0e0",
+    tableHeader: "#252525",
     flamingo: "#eb5c20",
     mineShaft: " #2c2626",
   },

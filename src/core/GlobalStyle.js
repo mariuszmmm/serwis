@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import backgrund from "../assets/images/background.png";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -16,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     overflow-y: scroll;
     color: ${({ theme }) => theme.color.primary};
+    background-color: ${({ theme }) => theme.color.background};
+    background-image: url("${backgrund}");
+    background-size: cover;
+    color: ${({ theme }) => theme.color.white};
   };
 `;
 
