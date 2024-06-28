@@ -11,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    color: ${({ theme }) => theme.color.primary};
   };
 `;
 

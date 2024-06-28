@@ -1,24 +1,26 @@
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
-import { Example1Page } from "../../features/example1/Example1Page";
-import { Example2Page } from "../../features/example2/Example2Page";
-import { Wrapper } from "./styled";
-import { Navigation } from "./Navigation";
-import { AboutPage } from "../../features/AboutPage";
-import { Example1PageId } from "../../features/example1/Example1Page/Example1PageId";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import { Header } from "./Header";
+import { About } from "../../features/About";
+import { Home } from "../../features/Home";
+import { Services } from "../../features/Services";
+import { Pricing } from "../../features/Pricing";
+import { Testimonials } from "../../features/Testimonials";
+import { Contact } from "../../features/Contact";
+import { Footer } from "./Footer";
 
 const App = () => {
   return (
     <HashRouter>
-      <Navigation />
-      <Wrapper>
-        <Routes>
-          <Route path="/page1/:id" element={<Example1PageId />} />
-          <Route path="/page2" element={<Example2Page />} />
-          <Route path="/page1" element={<Example1Page />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/" element={<Navigate to="/page1" />} />
-        </Routes>
-      </Wrapper>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
     </HashRouter>
   );
 };
