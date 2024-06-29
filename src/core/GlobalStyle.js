@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     overflow-y: scroll;
     color: ${({ theme }) => theme.color.primary};
     background-color: ${({ theme }) => theme.color.background};
@@ -24,7 +25,6 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
-    overflow: hidden;
   };
 `;
 
