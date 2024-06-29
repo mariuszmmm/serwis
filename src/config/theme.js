@@ -11,7 +11,7 @@ export const theme = {
     bold: 700,
   },
   color: {
-    primary: "#252525",
+    primary: "#1f1f1f",
     secondary: "#D6D6D6",
     tertiary: "#F2F2F2",
     white: "#ffffff",

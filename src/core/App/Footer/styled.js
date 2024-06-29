@@ -7,7 +7,6 @@ export const FooterWrapper = styled.footer`
   color: ${({ theme }) => theme.color.white};
   text-align: center;
   height: 50px;
-  filter: brightness(120%);
   font-size: 0.8rem;
 `;
 
