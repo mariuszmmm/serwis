@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
-    min-height: 100vh;
+    top: 0;
   };
 `;
 
