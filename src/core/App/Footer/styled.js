@@ -22,7 +22,7 @@ export const FooterContainer = styled.div`
 
 export const FooterText = styled.p`
   margin: 0;
-  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  font-size: clamp(0.5rem, 2.5vw, 0.8rem);
 `;
 
 export const SocialIcons = styled.div`

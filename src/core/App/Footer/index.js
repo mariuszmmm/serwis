@@ -15,7 +15,7 @@ export const Footer = () => {
     <FooterWrapper>
       <FooterContainer>
         <FooterText>
-          &copy; 2024 Naprawa AGD. Wszelkie prawa zastrzeżone.
+          &copy; 2024 {serwis.name}. Wszelkie prawa zastrzeżone.
         </FooterText>
         <SocialIcons>
           <SocialIcon href={serwis.url.facebook} target="_blank">
