@@ -1,57 +1,45 @@
-import pralka from "../assets/images/pralka.webp";
-import ekspres from "../assets/images/ekspres.png";
-
 export const serwis = {
   name: "Serwis - RTV i AGD",
   header: ["Profesjonalna naprawa pralek", "i ekspresów do kawy"],
   subheader: "Rzetelnie, szybko i skutecznie!",
-  about: [
-    "Jestem specjalistą z wieloletnim doświadczeniem w naprawie pralek automatycznych i ekspresów do kawy. Jako jednoosobowy serwis, podchodzę do każdej naprawy z pełnym zaangażowaniem i pasją. Moim celem jest zapewnienie najwyższej jakości usług oraz pełnej satysfakcji klientów.",
-    "Dzięki indywidualnemu podejściu do każdego zlecenia, mogę skupić się na szczegółach i dostarczać rozwiązania dopasowane do specyficznych potrzeb każdego klienta. Wierzę, że każda naprawa to nie tylko techniczne wyzwanie, ale również szansa na budowanie trwałych relacji z klientami, którzy mogą liczyć na rzetelność, terminowość i uczciwość.",
-    "Zachęcam do skorzystania z moich usług – gwarantuję, że Twoja pralka lub ekspres do kawy będzie działać jak nowy!",
-  ],
-  services: [
-    {
-      name: "Naprawa Pralek",
-      icon: pralka,
-      description:
-        "Oferujemy kompleksowe usługi naprawy pralek automatycznych wszystkich marek.",
-    },
-    {
-      name: "Naprawa Ekspresów do Kawy",
-      icon: ekspres,
-      description:
-        "Profesjonalna naprawa ekspresów do kawy, niezależnie od marki i modelu.",
-    },
-    {
-      name: "Serwis i Konserwacja",
-      icon: null,
-      description:
-        "Zajmujemy się regularnym serwisowaniem i konserwacją urządności AGD.",
-    },
-    {
-      name: "Konsultacje i Doradztwo",
-      icon: null,
-      description:
-        "Bardzo kompetentny serwis, szybka i skuteczna naprawa mojego ekspresu do kawy.",
-    },
-  ],
   pricing: [
     {
-      name: "Naprawa Pralek",
+      name: "Naprawa pralek",
       price: 100,
     },
     {
-      name: "Naprawa Ekspresów do Kawy",
+      name: "Naprawa ekspresów do kawy",
       price: 120,
     },
     {
-      name: "Serwis i Konserwacja",
+      name: "Serwis i konserwacja",
       price: 80,
     },
     {
-      name: "Konsultacje i Doradztwo",
+      name: "Konsultacje i doradztwo",
       price: 50,
+    },
+  ],
+  testimonials: [
+    {
+      text: "Pan bardzo punktualny, zaangażowany. Szybko i trafnie zdiagnozował problem. Usługa wykonana bardzo sprawnie i rzetelnie - pralka działa jak należy! Polecam serdecznie! Agata Wowk-Musiał",
+      author: "Agti Wo",
+    },
+    {
+      text: "Bardzo rzetelny serwis, polecam! Miałem problem z pralką, Pan znalazł termin w zasadzie od ręki, w dniu naprawy na miejscu znalazł i usunął usterkę, jestem bardzo zadowolony.",
+      author: "Gabriel Gwiazdoń",
+    },
+    {
+      text: "Pan z ogromną wiedzą i doświadczeniem. Już kilka napraw za nami , wszystko naprawione i działa. Polecam Pana Piotra. Najlepszy elektronik w mieście. Pozdrawiam",
+      author: "EL-METR INSTALACJE Zbigniew Banasiewicz",
+    },
+    {
+      text: "Serwis rzetelny, szybki i cenowo bardzo dobry. Pralka działa bez zarzutów po dziś dzień. Polecam",
+      author: "Piotr Wilgucki",
+    },
+    {
+      text: "Jestem osobą przyjezdną która spędza zazwyczaj 1-2 tygodnie w Przemyślu. Byłem w dwóch punktach naprawy które wyznaczyły mi terminy dość odległe. Jeden z nich obiecał oddzwonić lecz tego nie zrobił. Udałem się więc na ulicę Sowińskiego 2 do warsztatu Pana Matusiewicza. Gdy Pan Piotr dowiedział się że zależy mi na czasie ze względu na długość pobytu, wykonał naprawę pralki w ekspresowym tempie bez dodatkowych kosztów. Po naprawie następnego dnia okazało się iż wystąpiła druga usterka (nie związana z pierwszą). Pan Piotr ogarnął błyskawicznie temat bez ponoszenia przeze mnie dodatkowych kosztów. Mogę z czystym sumieniem polecić Pana Matusiewicza i jego warsztat. Osobiście na pewno skorzystam z Jego usług w przypadku jakichkolwiek problemów ze sprzętem AGD/FOTO/RTV.",
+      author: "Stanislaw Marczak",
     },
   ],
   url: {

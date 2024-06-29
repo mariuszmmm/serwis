@@ -17,7 +17,7 @@ export const theme = {
     white: "#ffffff",
     black: "#000000",
     emperor: "#555555",
-    background: "#f9f9f9",
+    background: "#252525",
     button: "#ff8c00",
     buttonHover: "#ff6f00",
     border: "#cccccc",

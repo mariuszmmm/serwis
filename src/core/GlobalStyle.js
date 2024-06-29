@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import backgrund from "../assets/images/background.png";
+import backgrund from "../assets/images/background3.png";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -20,6 +20,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.color.background};
     background-image: url("${backgrund}");
     background-size: cover;
+  background-position: center ; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
   };
 `;

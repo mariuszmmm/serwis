@@ -35,7 +35,7 @@ export const Nav = styled.nav`
 
   ul li {
     margin: 0 10px;
-    font-size: clamp(0.3rem, 1.6vw, 1.4rem);
+    font-size: clamp(0.3rem, 1.6vw, 1rem);
 
     @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
       margin: 0 5px;
