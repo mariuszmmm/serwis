@@ -5,8 +5,11 @@ export const serwis = {
   name: "Serwis - RTV i AGD",
   header: ["Profesjonalna naprawa pralek", "i ekspresów do kawy"],
   subheader: "Rzetelnie, szybko i skutecznie!",
-  about:
-    "Jesteśmy firmą z wieloletnim doświadczeniem w naprawie pralek automatycznych i ekspresów do kawy. Nasz zespół składa się z wykwalifikowanych techników, którzy z pasją podchodzą do każdej naprawy.",
+  about: [
+    "Jestem specjalistą z wieloletnim doświadczeniem w naprawie pralek automatycznych i ekspresów do kawy. Jako jednoosobowy serwis, podchodzę do każdej naprawy z pełnym zaangażowaniem i pasją. Moim celem jest zapewnienie najwyższej jakości usług oraz pełnej satysfakcji klientów.",
+    "Dzięki indywidualnemu podejściu do każdego zlecenia, mogę skupić się na szczegółach i dostarczać rozwiązania dopasowane do specyficznych potrzeb każdego klienta. Wierzę, że każda naprawa to nie tylko techniczne wyzwanie, ale również szansa na budowanie trwałych relacji z klientami, którzy mogą liczyć na rzetelność, terminowość i uczciwość.",
+    "Zachęcam do skorzystania z moich usług – gwarantuję, że Twoja pralka lub ekspres do kawy będzie działać jak nowy!",
+  ],
   services: [
     {
       name: "Naprawa Pralek",

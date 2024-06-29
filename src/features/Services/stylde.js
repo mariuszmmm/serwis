@@ -13,6 +13,6 @@ export const ServicesContainer = styled.div`
 
 export const ServicesTitle = styled.h2`
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   font-size: clamp(2rem, 4.5vw, 2.5rem);
 `;

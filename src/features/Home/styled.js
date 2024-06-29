@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  @media (max-width: ${({ theme }) => theme.breakpoint.medim}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 10px;
   }
 `;
@@ -22,8 +22,12 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroText = styled.p`
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    margin-bottom: 30px;
+  }
 `;
 
 const buttonStyles = css`
@@ -41,7 +45,7 @@ const buttonStyles = css`
     background-color: ${({ theme }) => theme.color.buttonHover};
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.medim}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 10px 15px;
     margin: 0 5px;
   }

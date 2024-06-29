@@ -16,8 +16,3 @@ export const AboutTitle = styled.h2`
   font-size: clamp(2rem, 4.5vw, 2.5rem);
 `;
 
-export const AboutText = styled.p`
-  line-height: 1.8;
-  margin: 0 15px 30px;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-`;

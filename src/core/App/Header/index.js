@@ -12,7 +12,7 @@ export const Header = () => {
               <StyledNavLink to="/">Strona Główna</StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/about">O nas</StyledNavLink>
+              <StyledNavLink to="/about">O mnie</StyledNavLink>
             </li>
             <li>
               <StyledNavLink to="/services">Usługi</StyledNavLink>
