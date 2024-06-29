@@ -25,7 +25,6 @@ const GlobalStyle = createGlobalStyle`
     background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
     overflow: hidden;
-    transition: 0.3s ease;
   };
 `;
 
