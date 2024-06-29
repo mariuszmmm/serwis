@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
     top: 0;
+    transition: 0.3s ease;
   };
 `;
 
