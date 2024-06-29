@@ -15,14 +15,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     color: ${({ theme }) => theme.color.primary};
     background-color: ${({ theme }) => theme.color.background};
     background-image: url("${backgrund}");
     background-size: cover;
-  background-position: center ; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
+    background-position: center ; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
   };
 `;
