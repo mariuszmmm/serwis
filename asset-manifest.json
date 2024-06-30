@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.js": "/serwis/static/js/main.0469917b.js",
+    "main.js": "/serwis/static/js/main.858ff4ab.js",
     "static/js/453.8c8d5fe1.chunk.js": "/serwis/static/js/453.8c8d5fe1.chunk.js",
-    "static/media/background3.png": "/serwis/static/media/background3.1413b5537209a7371d42.png",
+    "static/media/ekspres.png": "/serwis/static/media/ekspres.b21ea2d857e91d861dbc.png",
+    "static/media/pralka1.png": "/serwis/static/media/pralka1.ebf01251566f210cb323.png",
+    "static/media/zmywarka.png": "/serwis/static/media/zmywarka.441b0d9d99a3e9366558.png",
+    "static/media/background.png": "/serwis/static/media/background.d0b3fb7913cba58a19a5.png",
+    "static/media/telewizor.png": "/serwis/static/media/telewizor.d139433f8aa306c09d81.png",
     "static/media/teamImage.jpg": "/serwis/static/media/teamImage.ffebcbcd6c6a0d381690.jpg",
     "static/media/google.svg": "/serwis/static/media/google.9e318c9a515f515ca2dd0bb68990eafa.svg",
     "index.html": "/serwis/index.html",
     "static/media/facebook.svg": "/serwis/static/media/facebook.078932f155a733f131c178393d735fd6.svg",
-    "main.0469917b.js.map": "/serwis/static/js/main.0469917b.js.map",
+    "main.858ff4ab.js.map": "/serwis/static/js/main.858ff4ab.js.map",
     "453.8c8d5fe1.chunk.js.map": "/serwis/static/js/453.8c8d5fe1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.0469917b.js"
+    "static/js/main.858ff4ab.js"
   ]
 }
