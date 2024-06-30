@@ -5,6 +5,8 @@ export const Hero = styled.section`
   text-align: center;
   padding: 100px 0;
   min-height: calc(100vh - 50px);
+  position: relative;
+  overflow: hidden;
 `;
 
 export const HeroContainer = styled.div`
@@ -18,12 +20,12 @@ export const HeroContainer = styled.div`
 
 export const HeroTitle = styled.h1`
   margin-bottom: 20px;
-  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-size: clamp(1.8rem, 8vw, 5rem);
 `;
 
 export const HeroText = styled.p`
   margin-bottom: 50px;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(0.8rem, 3.5vw, 2rem);
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     margin-bottom: 30px;
@@ -34,7 +36,7 @@ const buttonStyles = css`
   background-color: ${({ theme }) => theme.color.button};
   color: ${({ theme }) => theme.color.white};
   padding: 15px 30px;
-  font-size: clamp(0.7rem, 2vw, 1rem);
+  font-size: clamp(0.7rem, 2vw, 2rem);
   text-decoration: none;
   margin: 0 10px;
   border-radius: 5px;

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import backgrund from "../assets/images/background3.png";
+import backgrund from "../assets/images/background.png";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -25,6 +25,12 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
+
+
+    /* position: relative;
+            width: 100%;
+            height: 100vh; 
+            overflow: hidden;  */
   };
 `;
 

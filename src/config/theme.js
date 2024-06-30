@@ -3,6 +3,7 @@ export const theme = {
     small: "480px",
     medium: "767px",
     large: "1024px",
+    big: "1500px",
   },
   fontWeight: {
     regular: 400,

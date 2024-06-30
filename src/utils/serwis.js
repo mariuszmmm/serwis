@@ -1,7 +1,5 @@
 export const serwis = {
   name: "Serwis - RTV i AGD",
-  header: ["Profesjonalna naprawa pralek", "i ekspresów do kawy"],
-  subheader: "Rzetelnie, szybko i skutecznie!",
   pricing: [
     {
       name: "Naprawa pralek",
