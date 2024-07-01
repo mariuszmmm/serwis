@@ -8,6 +8,7 @@ export const FooterWrapper = styled.footer`
   text-align: center;
   height: 50px;
   font-size: 0.8rem;
+  width: 100%;
 `;
 
 export const FooterContainer = styled.div`
@@ -15,6 +16,7 @@ export const FooterContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
   height: 100%;
 `;
@@ -25,6 +27,7 @@ export const FooterText = styled.p`
 `;
 
 export const SocialIcons = styled.div`
+  padding-left: 50px;
   display: flex;
   gap: 20px;
   margin: 0 10px;

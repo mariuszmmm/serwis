@@ -3,13 +3,7 @@ export const theme = {
     small: "480px",
     medium: "767px",
     large: "1024px",
-    big: "1500px",
-  },
-  fontWeight: {
-    regular: 400,
-    medium: 500,
-    semiBold: 600,
-    bold: 700,
+    big: "1200px",
   },
   color: {
     primary: "#1f1f1f",
@@ -24,6 +18,6 @@ export const theme = {
     border: "#cccccc",
     tableHeader: "#252525",
     flamingo: "#eb5c20",
-    mineShaft: " #2c2626",
+    mineShaft: " #211c1c",
   },
 };

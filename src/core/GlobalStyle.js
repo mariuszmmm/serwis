@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import backgrund from "../assets/images/background.png";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -18,19 +17,12 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     overflow-y: scroll;
     color: ${({ theme }) => theme.color.primary};
-    background-color: ${({ theme }) => theme.color.background};
-    background-image: url("${backgrund}");
+    background-color: ${({ theme }) => theme.color.mineShaft};
     background-size: cover;
     background-position: center ; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
-
-
-    /* position: relative;
-            width: 100%;
-            height: 100vh; 
-            overflow: hidden;  */
   };
 `;
 

@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   top: 0;
   height: 50px;
-  z-index: 1000;
+  z-index: 1;
 `;
 
 export const HeaderContainer = styled.div`

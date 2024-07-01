@@ -20,7 +20,7 @@ export const HeroContainer = styled.div`
 
 export const HeroTitle = styled.h1`
   margin-bottom: 20px;
-  font-size: clamp(1.8rem, 8vw, 5rem);
+  font-size: clamp(1.8rem, 8vw, 4rem);
 `;
 
 export const HeroText = styled.p`

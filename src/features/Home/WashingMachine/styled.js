@@ -1,15 +1,18 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const WashingMachineWrapper = styled.div`
   position: absolute;
-  top: 350px;
+  top: 300px;
   left: 50%;
-  transform: translateX(-1050px);
+  transform: translateX(-1000px);
   z-index: -1;
   transition: opacity 1s;
-  opacity: ${({ $show }) => ($show ? 1 : 0)};
+  opacity: ${({ $show }) => ($show ? 0.8 : 0)};
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
-    opacity: 0;
-  }
+  ${({ $center }) =>
+    $center &&
+    css`
+      top: 500px;
+      transform: translateX(-50%) scale(50%);
+    `}
 `;
