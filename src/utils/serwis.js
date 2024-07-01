@@ -1,5 +1,5 @@
 export const serwis = {
-  name: "Serwis - RTV i AGD",
+  name: "Serwis RTV i AGD - Przemyśl",
   pricing: [
     {
       name: "Naprawa pralek",

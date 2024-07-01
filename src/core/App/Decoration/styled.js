@@ -10,7 +10,7 @@ export const DecorationContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  scale: 250%;
+  transform: scale(250%);
   animation: rotateBackground 90s linear infinite;
 
   @keyframes rotateBackground {

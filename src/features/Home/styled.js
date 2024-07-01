@@ -11,16 +11,21 @@ export const Hero = styled.section`
 
 export const HeroContainer = styled.div`
   max-width: 1200px;
+  min-height: 700px;
   margin: 0 auto;
   padding: 20px;
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 10px;
   }
+
+  @media (orientation: portrait) {
+    height: 700px;
+  }
 `;
 
 export const HeroTitle = styled.h1`
   margin-bottom: 20px;
-  font-size: clamp(1.8rem, 8vw, 4rem);
+  font-size: clamp(1.8rem, 3vw, 4rem);
 `;
 
 export const HeroText = styled.p`

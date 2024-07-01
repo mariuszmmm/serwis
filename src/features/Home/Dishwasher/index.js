@@ -1,10 +1,10 @@
 import zmywarka from "../../../assets/images/zmywarka.png";
-import { DishwasherWrapper } from "./styled";
+import { DishwasherWrapper, Image } from "./styled";
 
 export const Dishwasher = ({ show, center }) => {
   return (
     <DishwasherWrapper $show={show} $center={center}>
-      <img src={zmywarka} alt="zmywarka" />
+      <Image src={zmywarka} alt="zmywarka"  $center={center}/>
     </DishwasherWrapper>
   );
 };

@@ -20,7 +20,7 @@ export const PricingTable = styled.table`
   width: 100%;
   border-collapse: collapse;
   margin-top: 30px;
-  background: rgba(30, 30, 30, 0.8);
+  background: rgba(40, 40, 40, 0.8);
 `;
 
 export const PricingTh = styled.th`

@@ -1,10 +1,10 @@
 import pralka from "../../../assets/images/pralka.png";
-import { WashingMachineWrapper } from "./styled";
+import { Image, WashingMachineWrapper } from "./styled";
 
-export const WashingMachine = ({ show ,center }) => {
+export const WashingMachine = ({ show, center }) => {
   return (
     <WashingMachineWrapper $show={show} $center={center}>
-      <img src={pralka} alt="pralka" />
+      <Image src={pralka} alt="pralka" $center={center}/>
     </WashingMachineWrapper>
   );
 };

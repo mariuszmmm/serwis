@@ -3,7 +3,7 @@ export const theme = {
     small: "480px",
     medium: "767px",
     large: "1024px",
-    big: "1200px",
+    big: "1440px",
   },
   color: {
     primary: "#1f1f1f",

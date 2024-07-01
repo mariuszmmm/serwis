@@ -16,10 +16,11 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
   height: 100%;
+  
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 0 10px;
   }
@@ -34,11 +35,12 @@ export const Nav = styled.nav`
   }
 
   ul li {
-    margin: 0 10px;
-    font-size: clamp(0.3rem, 1.6vw, 1rem);
+    margin: 0 2px;
+    font-size: clamp(0.3rem, 1.6vw, 0.9rem);
 
     @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-      margin: 0 5px;
+      margin: 0 1px;
+      
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
@@ -50,13 +52,13 @@ export const Nav = styled.nav`
 export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
-  padding: 10px;
+  padding: 8px 10px;
   transition: all 0.3s ease;
   display: flex;
   border-radius: 5px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    padding: 5px;
+    padding: 4px;
   }
 
   &.active,
