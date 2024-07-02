@@ -6,7 +6,7 @@ export const TelevisionWrapper = styled.div`
   left: 50%;
   transform: translateX(-1050px) translateY(-70px);
   z-index: -1;
-  transition: opacity 1s;
+  transition: opacity 1s ease-in-out;
   opacity: ${({ $show }) => ($show ? 0.8 : 0)};
 
   ${({ $center }) =>
