@@ -14,9 +14,9 @@ export const ContactContainer = styled.div`
   margin: 0 10px;
 `;
 
-export const ContactTitle = styled.h2`
-  font-size: 2.5rem;
+export const ContactTitle = styled.h1`
   margin-bottom: 20px;
+  font-size: clamp(1.5rem, 3vw, 4rem);
 `;
 
 export const ContactForm = styled.form`
@@ -71,6 +71,16 @@ export const ContactInfo = styled.div`
 
 export const ContactText = styled.p`
   font-size: 1.2rem;
+`;
+
+export const MailLink = styled.a`
+  color: ${({ theme }) => theme.color.button};
+  text-decoration: none;
+`;
+
+export const PhoneLink = styled.a`
+  color: ${({ theme }) => theme.color.button};
+  text-decoration: none;
 `;
 
 export const Iframe = styled.iframe`

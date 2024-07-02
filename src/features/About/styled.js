@@ -11,9 +11,9 @@ export const AboutContainer = styled.div`
   margin: 0 auto;
 `;
 
-export const AboutTitle = styled.h2`
+export const AboutTitle = styled.h1`
   margin-bottom: 20px;
-  font-size: clamp(2rem, 4.5vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 4rem);
 `;
 
 export const AboutText = styled.p`

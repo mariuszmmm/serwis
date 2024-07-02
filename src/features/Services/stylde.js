@@ -11,10 +11,9 @@ export const ServicesContainer = styled.div`
   margin: 0 auto;
 `;
 
-export const ServicesTitle = styled.h2`
-  font-size: 2.5rem;
+export const ServicesTitle = styled.h1`
   margin-bottom: 80px;
-  font-size: clamp(2rem, 4.5vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 4rem);
 `;
 
 export const ServiceIcon = styled.img`
@@ -22,7 +21,7 @@ export const ServiceIcon = styled.img`
   height: 200px;
 `;
 
-export const ServiceTitle = styled.h3`
+export const ServiceTitle = styled.h2`
   margin-bottom: 10px;
   font-size: clamp(1.5rem, 3.5vw, 1.8rem);
 `;

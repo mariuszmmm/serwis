@@ -11,9 +11,9 @@ export const PricingContainer = styled.div`
   margin: 0 auto;
 `;
 
-export const PricingTitle = styled.h2`
-  font-size: 2.5rem;
+export const PricingTitle = styled.h1`
   margin-bottom: 20px;
+  font-size: clamp(1.5rem, 3vw, 4rem);
 `;
 
 export const PricingTable = styled.table`
