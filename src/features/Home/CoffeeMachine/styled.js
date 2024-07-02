@@ -17,7 +17,7 @@ export const CoffeeMachineWrapper = styled.div`
 
       @media (orientation: portrait) {
         top: clamp(380px, 40vw, 550px);
-        transform: translateX(-50%) translateY(40px) scale(50%);
+        transform: translateX(-50%) translateY(170px) scale(50%);
 
         @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
           transform: translateX(-50%) translateY(-50px) scale(40%);

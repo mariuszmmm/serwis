@@ -17,7 +17,7 @@ export const TelevisionWrapper = styled.div`
 
       @media (orientation: portrait) {
         top: clamp(420px, 45vw, 550px);
-        transform: translateX(-50%) translateY(40px) scale(50%);
+        transform: translateX(-50%) translateY(130px) scale(50%);
 
         @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
           transform: translateX(-50%) translateY(-60px) scale(40%);
