@@ -37,7 +37,9 @@ export const Home = () => {
     7: [0, 0, 0, 1],
     8: [0, 0, 0, 0],
   };
-  const isPortrait = window.innerHeight > window.innerWidth;
+  const [isPortrait, setIsPortrait] = useState(
+    window.innerHeight > window.innerWidth
+  );
   const [activeScene, setActiveScene] = useState({
     reset: false,
     number: 0,
@@ -45,12 +47,14 @@ export const Home = () => {
   });
 
   useEffect(() => {
+    if (isPortrait === window.innerHeight > window.innerWidth) return;
+    setIsPortrait(window.innerHeight > window.innerWidth);
     setActiveScene({
+      ...activeScene,
       reset: true,
       number: 0,
-      content: isPortrait ? mobileScene[0] : scene[0],
     });
-  }, [isPortrait]);
+  }, [window.innerHeight, window.innerWidth]);
 
   useEffect(() => {
     let sceneNumber = activeScene.number >= 8 ? 1 : activeScene.number + 1;
@@ -70,16 +74,32 @@ export const Home = () => {
   }, [activeScene]);
 
   return (
-    <Hero> 
+    <Hero>
       {/* <WashingMachine show={true} center={isPortrait} />
       <CoffeeMachine show={true} center={isPortrait} />
       <Dishwasher show={true} center={isPortrait} />
       <Television show={true} center={isPortrait} /> */}
 
-      <WashingMachine show={activeScene.content[0]} center={isPortrait} />
-      <CoffeeMachine show={activeScene.content[1]} center={isPortrait} />
-      <Dishwasher show={activeScene.content[2]} center={isPortrait} />
-      <Television show={activeScene.content[3]} center={isPortrait} />
+      <WashingMachine
+        show={activeScene.content[0]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <CoffeeMachine
+        show={activeScene.content[1]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <Dishwasher
+        show={activeScene.content[2]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <Television
+        show={activeScene.content[3]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa

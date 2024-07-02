@@ -8,6 +8,11 @@ export const WashingMachineWrapper = styled.div`
   z-index: -1;
   transition: opacity 1s ease-in-out;
   opacity: ${({ $show }) => ($show ? 0.8 : 0)};
+  ${({ $noDisplay }) =>
+    $noDisplay &&
+    css`
+      display: none;
+    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
     ${({ $center }) =>
