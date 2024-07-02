@@ -9,6 +9,38 @@ export const DishwasherWrapper = styled.div`
   transition: opacity 1s ease-in-out;
   opacity: ${({ $show }) => ($show ? 0.8 : 0)};
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(120px) translateY(-200px) scale(60%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-10px) translateY(-340px) scale(30%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-60px) translateY(-370px) scale(30%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-100px) translateY(-400px) scale(20%);
+      `}
+  }
+
   ${({ $center }) =>
     $center &&
     css`
@@ -17,7 +49,7 @@ export const DishwasherWrapper = styled.div`
 
       @media (orientation: portrait) {
         top: clamp(400px, 45vw, 550px);
-        transform: translateX(-50%) translateY(150px) scale(50%);
+        transform: translateX(-50%) translateY(170px) scale(50%);
 
         @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
           transform: translateX(-50%) translateY(-60px) scale(38%);
@@ -28,38 +60,6 @@ export const DishwasherWrapper = styled.div`
         }
       }
     `}
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
-    ${({ $center }) =>
-      !$center &&
-      css`
-        transform: translateX(120px) translateY(-150px) scale(60%);
-      `}
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
-    ${({ $center }) =>
-      !$center &&
-      css`
-        transform: translateX(10px) translateY(-260px) scale(30%);
-      `}
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    ${({ $center }) =>
-      !$center &&
-      css`
-        transform: translateX(-40px) translateY(-350px) scale(30%);
-      `}
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    ${({ $center }) =>
-      !$center &&
-      css`
-        transform: translateX(-90px) translateY(-400px) scale(20%);
-      `}
-  }
 `;
 
 export const Image = styled.img`

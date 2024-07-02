@@ -4,10 +4,42 @@ export const TelevisionWrapper = styled.div`
   position: absolute;
   top: 220px;
   left: 50%;
-  transform: translateX(-1050px) translateY(-70px);
+  transform: translateX(-1070px) translateY(-70px);
   z-index: -1;
   transition: opacity 1s ease-in-out;
   opacity: ${({ $show }) => ($show ? 0.8 : 0)};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-880px) translateY(-200px) scale(60%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-740px) translateY(-340px) scale(30%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-680px) translateY(-360px) scale(25%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-630px) translateY(-390px) scale(20%);
+      `}
+  }
 
   ${({ $center }) =>
     $center &&
@@ -20,7 +52,7 @@ export const TelevisionWrapper = styled.div`
         transform: translateX(-50%) translateY(130px) scale(50%);
 
         @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-          transform: translateX(-50%) translateY(-60px) scale(40%);
+          transform: translateX(-50%) translateY(-40px) scale(40%);
         }
 
         @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
@@ -28,38 +60,6 @@ export const TelevisionWrapper = styled.div`
         }
       }
     `}
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
-    ${({ $center }) =>
-      !$center &&
-      css`
-        transform: translateX(-880px) translateY(-140px) scale(60%);
-      `}
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
-    ${({ $center }) =>
-      !$center &&
-      css`
-        transform: translateX(-750px) translateY(-260px) scale(30%);
-      `}
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    ${({ $center }) =>
-      !$center &&
-      css`
-        transform: translateX(-700px) translateY(-340px) scale(25%);
-      `}
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    ${({ $center }) =>
-      !$center &&
-      css`
-        transform: translateX(-640px) translateY(-390px) scale(20%);
-      `}
-  }
 `;
 
 export const Image = styled.img`

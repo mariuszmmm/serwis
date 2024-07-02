@@ -70,7 +70,7 @@ export const Home = () => {
   }, [activeScene]);
 
   return (
-    <Hero>
+    <Hero> 
       {/* <WashingMachine show={true} center={isPortrait} />
       <CoffeeMachine show={true} center={isPortrait} />
       <Dishwasher show={true} center={isPortrait} />
