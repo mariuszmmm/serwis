@@ -4,7 +4,7 @@ export const TelevisionWrapper = styled.div`
   position: absolute;
   top: 220px;
   left: 50%;
-  transform: translateX(-1100px);
+  transform: translateX(-1050px) translateY(-70px);
   z-index: -1;
   transition: opacity 1s;
   opacity: ${({ $show }) => ($show ? 0.8 : 0)};
@@ -16,7 +16,16 @@ export const TelevisionWrapper = styled.div`
       transform: translateX(-50%) scale(50%);
 
       @media (orientation: portrait) {
-        top: clamp(450px, 45vw, 550px);
+        top: clamp(420px, 45vw, 550px);
+        transform: translateX(-50%) translateY(40px) scale(50%);
+
+        @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+          transform: translateX(-50%) translateY(-60px) scale(40%);
+        }
+
+        @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+          transform: translateX(-50%) translateY(-80px) scale(40%);
+        }
       }
     `}
 
@@ -24,7 +33,31 @@ export const TelevisionWrapper = styled.div`
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-980px);
+        transform: translateX(-880px) translateY(-140px) scale(60%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-750px) translateY(-260px) scale(30%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-700px) translateY(-340px) scale(25%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-640px) translateY(-390px) scale(20%);
       `}
   }
 `;

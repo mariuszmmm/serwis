@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
-  height: 50px;
+  /* height: 50px; */
   z-index: 1;
 `;
 
@@ -19,8 +19,8 @@ export const HeaderContainer = styled.div`
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
-  height: 100%;
-  
+  /* height: 100%; */
+
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 0 10px;
   }
@@ -40,7 +40,6 @@ export const Nav = styled.nav`
 
     @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
       margin: 0 1px;
-      
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoint.small}) {

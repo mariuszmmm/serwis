@@ -17,40 +17,40 @@ export const Home = () => {
   const scene = {
     // ["washingMachine", "coffeeMachine","dishwasher"," "television"],
     0: [0, 0, 0, 0],
-    1: [1, 1, 0, 0],
-    2: [0, 1, 0, 0],
+    1: [1, 0, 1, 0],
+    2: [0, 0, 0, 0],
     3: [0, 1, 0, 1],
-    4: [0, 0, 0, 1],
-    5: [0, 0, 1, 1],
-    6: [0, 0, 1, 0],
-    7: [1, 0, 1, 0],
-    8: [1, 0, 0, 0],
+    4: [0, 0, 0, 0],
+    5: [1, 0, 1, 0],
+    6: [0, 0, 0, 0],
+    7: [0, 1, 0, 1],
+    8: [0, 0, 0, 0],
   };
   const mobileScene = {
     0: [0, 0, 0, 0],
     1: [1, 0, 0, 0],
     2: [0, 0, 0, 0],
-    3: [0, 1, 0, 0],
+    3: [0, 0, 1, 0],
     4: [0, 0, 0, 0],
-    5: [0, 0, 1, 0],
+    5: [0, 1, 0, 0],
     6: [0, 0, 0, 0],
     7: [0, 0, 0, 1],
     8: [0, 0, 0, 0],
   };
-  const isMobile = window.screen.width <= 1350;
+  const isPortrait = window.innerHeight > window.innerWidth;
   const [activeScene, setActiveScene] = useState({
     reset: false,
     number: 0,
-    content: isMobile ? mobileScene[0] : scene[0],
+    content: isPortrait ? mobileScene[0] : scene[0],
   });
 
   useEffect(() => {
     setActiveScene({
       reset: true,
       number: 0,
-      content: isMobile ? mobileScene[0] : scene[0],
+      content: isPortrait ? mobileScene[0] : scene[0],
     });
-  }, [isMobile]);
+  }, [isPortrait]);
 
   useEffect(() => {
     let sceneNumber = activeScene.number >= 8 ? 1 : activeScene.number + 1;
@@ -60,7 +60,7 @@ export const Home = () => {
         setActiveScene({
           reset: false,
           number: sceneNumber,
-          content: isMobile ? mobileScene[sceneNumber] : scene[sceneNumber],
+          content: isPortrait ? mobileScene[sceneNumber] : scene[sceneNumber],
         });
       },
       isTransition ? 5000 : 1500
@@ -71,15 +71,15 @@ export const Home = () => {
 
   return (
     <Hero>
-      {/* <WashingMachine show={true} center={isMobile} />
-      <CoffeeMachine show={true} center={isMobile} />
-      <Dishwasher show={true} center={isMobile} />
-      <Television show={true} center={isMobile} /> */}
+      {/* <WashingMachine show={true} center={isPortrait} />
+      <CoffeeMachine show={true} center={isPortrait} />
+      <Dishwasher show={true} center={isPortrait} />
+      <Television show={true} center={isPortrait} /> */}
 
-      <WashingMachine show={activeScene.content[0]} center={isMobile} />
-      <CoffeeMachine show={activeScene.content[1]} center={isMobile} />
-      <Dishwasher show={activeScene.content[2]} center={isMobile} />
-      <Television show={activeScene.content[3]} center={isMobile} />
+      <WashingMachine show={activeScene.content[0]} center={isPortrait} />
+      <CoffeeMachine show={activeScene.content[1]} center={isPortrait} />
+      <Dishwasher show={activeScene.content[2]} center={isPortrait} />
+      <Television show={activeScene.content[3]} center={isPortrait} />
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa

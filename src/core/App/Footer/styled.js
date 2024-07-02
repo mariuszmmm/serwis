@@ -6,7 +6,7 @@ export const FooterWrapper = styled.footer`
   background-color: ${({ theme }) => theme.color.primary};
   color: ${({ theme }) => theme.color.white};
   text-align: center;
-  height: 50px;
+  height: 5vh;
   font-size: 0.8rem;
   width: 100%;
 `;
@@ -23,7 +23,7 @@ export const FooterContainer = styled.div`
 
 export const FooterText = styled.p`
   margin: 0;
-  font-size: clamp(0.5rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.3rem, 2.5vw, 0.6rem);
 `;
 
 export const SocialIcons = styled.div`
@@ -40,8 +40,8 @@ export const SocialIcon = styled.a`
 `;
 
 const styledIcon = (icon) => styled(icon)`
-  width: 25px;
-  height: 25px;
+  width: 3vh;
+  height: 3vh;
   border-radius: 50%;
   transition: all 0.3s ease;
   color: ${({ theme }) => theme.color.white};

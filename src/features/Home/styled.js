@@ -3,37 +3,59 @@ import { Link } from "react-router-dom";
 
 export const Hero = styled.section`
   text-align: center;
-  padding: 100px 0;
-  min-height: calc(100vh - 50px);
+  padding: 12vh 0 9vh;
+  min-height: calc(100vh - 5vh);
   position: relative;
   overflow: hidden;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    padding: 12vh 0 6vh;
+  }
 `;
 
 export const HeroContainer = styled.div`
   max-width: 1200px;
-  min-height: 700px;
+  min-height: 600px;
   margin: 0 auto;
   padding: 20px;
-  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    padding: 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
+    min-height: 350px;
   }
 
-  @media (orientation: portrait) {
-    height: 700px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    min-height: 150px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    padding: 10px;
   }
 `;
 
 export const HeroTitle = styled.h1`
   margin-bottom: 20px;
-  font-size: clamp(1.8rem, 3vw, 4rem);
+  font-size: clamp(1.5rem, 3vw, 4rem);
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+
+  @media (orientation: portrait) {
+    font-size: 1.7rem;
+  }
 `;
 
 export const HeroText = styled.p`
   margin-bottom: 50px;
-  font-size: clamp(0.8rem, 3.5vw, 2rem);
+  font-size: clamp(0.8rem, 2.5vw, 2rem);
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     margin-bottom: 30px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    margin-bottom: 20px;
   }
 `;
 

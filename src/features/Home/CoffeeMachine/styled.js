@@ -4,7 +4,7 @@ export const CoffeeMachineWrapper = styled.div`
   position: absolute;
   top: 240px;
   left: 50%;
-  transform: translateX(250px);
+  transform: translateX(230px) translateY(-50px);
   z-index: -1;
   transition: opacity 1s;
   opacity: ${({ $show }) => ($show ? 0.8 : 0)};
@@ -16,7 +16,16 @@ export const CoffeeMachineWrapper = styled.div`
       transform: translateX(-50%) scale(50%);
 
       @media (orientation: portrait) {
-        top: clamp(420px, 40vw, 550px);
+        top: clamp(380px, 40vw, 550px);
+        transform: translateX(-50%) translateY(40px) scale(50%);
+
+        @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+          transform: translateX(-50%) translateY(-50px) scale(40%);
+        }
+
+        @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+          transform: translateX(-50%) translateY(-80px) scale(40%);
+        }
       }
     `}
 
@@ -24,7 +33,31 @@ export const CoffeeMachineWrapper = styled.div`
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(150px);
+        transform: translateX(50px) translateY(-150px) scale(60%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-60px) translateY(-260px) scale(30%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-120px) translateY(-340px) scale(30%);
+      `}
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    ${({ $center }) =>
+      !$center &&
+      css`
+        transform: translateX(-170px) translateY(-390px) scale(20%);
       `}
   }
 `;
