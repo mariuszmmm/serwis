@@ -1,6 +1,6 @@
 import { AboutContainer, AboutSection, AboutText, AboutTitle } from "./styled";
 import { TeamImage } from "../../common/TeamImage";
-import team from "../../assets/images/team.jpg";
+import team from "../../assets/images/serwis.jpg";
 
 export const About = () => {
   return (
@@ -23,7 +23,7 @@ export const About = () => {
           że&nbsp;Twoja pralka lub&nbsp;ekspres do&nbsp;kawy będzie działać
           jak&nbsp;nowy!
         </AboutText>
-        <TeamImage src={team} alt="team" />
+        <TeamImage src={team} alt="serwis" />
       </AboutContainer>
     </AboutSection>
   );
