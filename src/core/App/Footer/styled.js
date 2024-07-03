@@ -27,16 +27,19 @@ export const FooterText = styled.p`
 `;
 
 export const SocialIcons = styled.div`
-  padding-left: 50px;
+  padding-left: clamp(10px, 2.5vw, 50px);
   display: flex;
-  gap: 20px;
-  margin: 0 10px;
+  gap: clamp(10px, 2.5vw, 20px);
+  margin: 0;
 `;
 
 export const SocialIcon = styled.a`
   display: flex;
   align-items: center;
   height: 100%;
+  text-decoration: none;
+  gap: 10px;
+  color: ${({ theme }) => theme.color.white};
 `;
 
 const styledIcon = (icon) => styled(icon)`

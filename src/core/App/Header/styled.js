@@ -52,7 +52,7 @@ export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   padding: 8px 10px;
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
   display: flex;
   border-radius: 5px;
 
@@ -64,4 +64,11 @@ export const StyledNavLink = styled(NavLink)`
   &:hover {
     background-color: ${({ theme }) => theme.color.emperor};
   }
+`;
+
+export const Logo = styled(NavLink)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.white};
+  font-size: clamp(0.5rem, 2.5vw, 1.3rem);
+  font-weight: bold;
 `;

@@ -44,7 +44,7 @@ export const serwis = {
     facebook:
       "https://www.facebook.com/pages/Naprawa-pralek-i-sprz%C4%99tu-RTV-FOTO/657632397637879?ref=bookmarks",
     google:
-      "https://www.google.com/localservices/prolist?src=2&slp=UhMIARIPEg0iCy9nLzF3MGoyemho",
+      "https://www.google.com/localservices/prolist?src=2&slp=UhMIARIPEg0iCy9nLzF3MGoyemho&spp=CgsvZy8xdzBqMnpoaA%3D%3D",
   },
   email: "piotrek_serwis@wp.pl",
   phone: "+48 790-258-612",
