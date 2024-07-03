@@ -6,7 +6,7 @@ export const theme = {
     big: "1440px",
   },
   color: {
-    primary: "#1f1f1f",
+    primary: "#141111",
     secondary: "#D6D6D6",
     tertiary: "#F2F2F2",
     white: "#ffffff",
@@ -18,6 +18,6 @@ export const theme = {
     border: "#cccccc",
     tableHeader: "#252525",
     flamingo: "#eb5c20",
-    mineShaft: " #211c1c",
+    mineShaft: "#211c1c",
   },
 };
