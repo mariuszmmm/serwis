@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./Header";
 import { About } from "../../features/About";
 import { Home } from "../../features/Home";
@@ -12,7 +12,7 @@ import { Background, Circle, Rotating } from "./Background";
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       {/* <Decoration /> */}
       <Background>
         <Rotating>
@@ -22,7 +22,7 @@ const App = () => {
         </Rotating>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/pricing" element={<Pricing />} />
@@ -31,7 +31,7 @@ const App = () => {
         </Routes>
         <Footer />
       </Background>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
