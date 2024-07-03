@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
@@ -8,7 +8,6 @@ export const HeaderWrapper = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
-  /* height: 50px; */
   z-index: 1;
 `;
 
@@ -19,7 +18,6 @@ export const HeaderContainer = styled.div`
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
-  /* height: 100%; */
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 0 10px;
@@ -48,7 +46,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const StyledNavLink = styled(NavLink)`
+export const StyledNavLink = styled(Link)`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   padding: 8px 10px;
@@ -66,7 +64,7 @@ export const StyledNavLink = styled(NavLink)`
   }
 `;
 
-export const Logo = styled(NavLink)`
+export const Logo = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => theme.color.white};
   font-size: clamp(0.5rem, 2.5vw, 1.3rem);
