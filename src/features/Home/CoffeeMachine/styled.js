@@ -7,7 +7,7 @@ export const CoffeeMachineWrapper = styled.div`
   transform: translateX(240px) translateY(-50px);
   z-index: -1;
   transition: opacity 1s ease-in-out;
-  opacity: ${({ $show }) => ($show ? 0.8 : 0)};
+  opacity: ${({ $show }) => ($show ? 1 : 0)};
   ${({ $noDisplay }) =>
     $noDisplay &&
     css`

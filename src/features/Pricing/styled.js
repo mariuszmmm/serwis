@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PricingSection = styled.section`
   padding: 100px 0;
   text-align: center;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 5vh);
 `;
 
 export const PricingContainer = styled.div`

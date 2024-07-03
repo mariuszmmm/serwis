@@ -29,7 +29,7 @@ export const FooterText = styled.p`
 export const SocialIcons = styled.div`
   padding-left: clamp(10px, 2.5vw, 50px);
   display: flex;
-  gap: clamp(10px, 2.5vw, 20px);
+  gap: clamp(5px, 2.5vw, 15px);
   margin: 0;
 `;
 
@@ -38,7 +38,7 @@ export const SocialIcon = styled.a`
   align-items: center;
   height: 100%;
   text-decoration: none;
-  gap: 10px;
+  gap: 5px;
   color: ${({ theme }) => theme.color.white};
 `;
 

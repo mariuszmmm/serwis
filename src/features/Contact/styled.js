@@ -3,14 +3,13 @@ import styled from "styled-components";
 export const ContactSection = styled.section`
   display: flex;
   justify-content: center;
-  padding: 100px 0;
+  padding: 100px 0 20px;
   text-align: center;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 5vh);
 `;
 
 export const ContactContainer = styled.div`
   max-width: 800px;
-  margin: 0 auto;
   margin: 0 10px;
 `;
 
