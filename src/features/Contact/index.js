@@ -14,18 +14,10 @@ import {
   PhoneLink,
 } from "./styled";
 import { serwis } from "../../utils/serwis";
-import { Helmet } from "react-helmet";
 
 export const Contact = () => {
   return (
     <ContactSection>
-      <Helmet>
-        <title>Kontakt - Naprawa RTV i AGD - Przemyśl</title>
-        <meta
-          name="description"
-          content="Skontaktuj się z nami, aby uzyskać więcej informacji o naszych usługach naprawy RTV i AGD w Przemyślu."
-        />
-      </Helmet>
       <ContactContainer>
         <ContactTitle>Kontakt</ContactTitle>
         {/* <ContactForm>

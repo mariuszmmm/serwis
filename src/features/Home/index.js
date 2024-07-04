@@ -5,7 +5,6 @@ import { WashingMachine } from "./WashingMachine";
 import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
 
 export const Home = () => {
   const scene = {
@@ -71,13 +70,6 @@ export const Home = () => {
 
   return (
     <Hero>
-      <Helmet>
-        <title>Serwis Telewizorów, Pralek, Zmywarek i Ekspresów do Kawy</title>
-        <meta
-          name="description"
-          content="Profesjonalny serwis AGD i RTV w Przemyślu. Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy. Szybkie i rzetelne usługi serwisowe."
-        />
-      </Helmet>
       {/* <WashingMachine show={true} center={isPortrait} />
       <CoffeeMachine show={true} center={isPortrait} />
       <Dishwasher show={true} center={isPortrait} />

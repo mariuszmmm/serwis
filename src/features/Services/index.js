@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import {
   ServiceItem,
   ServiceText,
@@ -11,13 +10,6 @@ import {
 export const Services = () => {
   return (
     <ServicesSection>
-      <Helmet>
-        <title>Usługi - Naprawa RTV i AGD - Przemyśl</title>
-        <meta
-          name="description"
-          content="Zapoznaj się z naszymi usługami naprawy RTV i AGD w Przemyślu."
-        />
-      </Helmet>
       <ServicesContainer>
         <ServicesTitle>Zakres usług</ServicesTitle>
         <ServiceItem>
