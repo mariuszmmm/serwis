@@ -6,7 +6,6 @@ import {
   ServicesSection,
   ServicesTitle,
 } from "./stylde";
-import { serwis } from "../../utils/serwis";
 
 export const Services = () => {
   return (

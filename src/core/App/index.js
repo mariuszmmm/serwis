@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./Header";
 import { About } from "../../features/About";
 import { Home } from "../../features/Home";
@@ -11,7 +11,7 @@ import { Background } from "./Background";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Background />
       <Header />
       <Routes>
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 };
 
