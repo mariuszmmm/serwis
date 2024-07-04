@@ -6,7 +6,7 @@ export const PricingSection = styled.section`
   min-height: calc(100vh - 5vh);
 `;
 
-export const PricingContainer = styled.div`
+export const PricingContainer = styled.div`  
   max-width: 800px;
   margin: 0 auto;
 `;
