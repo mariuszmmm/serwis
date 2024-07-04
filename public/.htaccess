@@ -6,8 +6,8 @@
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Przekierowanie testowe
-  RewriteRule ^test\.html$ http://www.example.com [L,R=302]
+  # # Przekierowanie testowe
+  # RewriteRule ^test\.html$ http://www.example.com [L,R=302]
 
   # Przekierowanie wszystkich żądań do index.html
   RewriteRule ^index\.html$ - [L]
