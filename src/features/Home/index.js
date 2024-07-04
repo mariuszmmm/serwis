@@ -97,15 +97,22 @@ export const Home = () => {
       />
       <HeroContainer>
         <HeroTitle>
-          Profesjonalna naprawa
-          <br />
-          pralek, zmywarek,
-          <br />
-          telewizorów
+          Profesjonalna naprawa pralek, zmywarek,
+          <br /> telewizorów
           <br /> i&nbsp;ekspresów do&nbsp;kawy
+          <br />
+          w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
         <HeroButton href={`tel:${serwis.phone}`}>Zadzwoń teraz</HeroButton>
+        <HeroText $notShow={isPortrait}>
+          {" "}
+          <br />
+          Z ponad 20-letnim doświadczeniem <br />w naprawie sprzętu RTV i AGD,
+          <br />
+          zapewniamy najwyższą jakość usług <br />
+          dla naszych klientów."
+        </HeroText>
         {/* <StyledLink to="/kontakt">Umów wizytę</StyledLink> */}
       </HeroContainer>
     </Hero>

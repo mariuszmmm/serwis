@@ -12,6 +12,6 @@ export const TestimonialsContainer = styled.div`
 `;
 
 export const TestimonialsTitle = styled.h1`
-  margin-bottom: 50px;
-  font-size: clamp(1.5rem, 3vw, 4rem);
+  margin-bottom: 40px;
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
 `;

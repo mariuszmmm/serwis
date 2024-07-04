@@ -21,7 +21,7 @@ export const Rotating = styled.div`
   width: 100%;
   height: 100%;
   animation: rotateBg 30s linear infinite;
-  opacity: 0.8;
+  opacity: 0.5;
   background-color: transparent;
 `;
 
@@ -51,10 +51,10 @@ export const Circle = styled.div`
   height: 60vw;
   background: radial-gradient(
     circle,
-    rgba(235, 92, 32, 0.5) 0%,
+    rgba(235, 92, 32, 0.8) 0%,
     rgba(235, 92, 32, 0) 70%
   );
   border-radius: 50%;
-  filter: blur(10px);
-  animation: moveCircle 30s infinite;
+  filter: blur(20px);
+  animation: moveCircle 40s infinite;
 `;

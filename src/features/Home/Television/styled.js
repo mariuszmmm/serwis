@@ -61,7 +61,7 @@ export const TelevisionWrapper = styled.div`
         }
 
         @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-          transform: translateX(-50%) translateY(-80px) scale(40%);
+          transform: translateX(-50%) translateY(0) scale(40%);
         }
       }
     `}

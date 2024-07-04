@@ -12,8 +12,8 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesTitle = styled.h1`
-  margin-bottom: 80px;
-  font-size: clamp(1.5rem, 3vw, 4rem);
+  margin-bottom: 40px;
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
 `;
 
 export const ServiceIcon = styled.img`
@@ -22,13 +22,16 @@ export const ServiceIcon = styled.img`
 `;
 
 export const ServiceTitle = styled.h2`
+  text-align: left;
   margin-bottom: 10px;
-  font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
 `;
 
 export const ServiceText = styled.p`
   line-height: 1.6;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
+  text-align: justify;
+  text-justify: inter-word;
 `;
 
 export const ServiceItem = styled.div`

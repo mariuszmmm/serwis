@@ -6,14 +6,15 @@ export const PricingSection = styled.section`
   min-height: calc(100vh - 5vh);
 `;
 
-export const PricingContainer = styled.div`  
+export const PricingContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 10px;
 `;
 
 export const PricingTitle = styled.h1`
-  margin-bottom: 20px;
-  font-size: clamp(1.5rem, 3vw, 4rem);
+  margin-bottom: 40px;
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
 `;
 
 export const PricingTable = styled.table`

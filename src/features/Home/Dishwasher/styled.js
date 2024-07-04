@@ -61,7 +61,7 @@ export const DishwasherWrapper = styled.div`
         }
 
         @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-          transform: translateX(-50%) translateY(-90px) scale(35%);
+          transform: translateX(-50%) translateY(-10px) scale(35%);
         }
       }
     `}

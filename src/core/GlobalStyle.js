@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   };
 
   body {
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

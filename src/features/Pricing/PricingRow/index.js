@@ -6,7 +6,7 @@ export const PricingRow = ({ item }) => {
   return (
     <tr>
       <PricingTd>{name}</PricingTd>
-      <PricingTd>od {price} PLN</PricingTd>
+      <PricingTd center>od {price} PLN</PricingTd>
     </tr>
   );
 };

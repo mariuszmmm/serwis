@@ -1,13 +1,21 @@
 export const serwis = {
-  name: "Serwis RTV i AGD - Przemyśl",
+  name: "Serwis RTV i AGD",
   pricing: [
     {
-      name: "Naprawa pralek",
+      name: "Naprawa pralki",
       price: 100,
     },
     {
-      name: "Naprawa ekspresów do kawy",
+      name: "Naprawa zmywarki",
+      price: 100,
+    },
+    {
+      name: "Naprawa ekspresu do kawy",
       price: 120,
+    },
+    {
+      name: "Naprawa telewizora",
+      price: 150,
     },
     {
       name: "Serwis i konserwacja",
