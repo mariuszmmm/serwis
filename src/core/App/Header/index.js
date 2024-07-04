@@ -1,4 +1,10 @@
-import { HeaderContainer, HeaderWrapper, Logo, Nav, StyledNavLink } from "./styled";
+import {
+  HeaderContainer,
+  HeaderWrapper,
+  Logo,
+  Nav,
+  StyledNavLink,
+} from "./styled";
 import { serwis } from "../../../utils/serwis";
 export const Header = () => {
   return (
@@ -11,19 +17,19 @@ export const Header = () => {
               <StyledNavLink to="/">Strona Główna</StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/about">O mnie</StyledNavLink>
+              <StyledNavLink to="/o-nas">O mnie</StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/services">Usługi</StyledNavLink>
+              <StyledNavLink to="/uslugi">Usługi</StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/pricing">Cennik</StyledNavLink>
+              <StyledNavLink to="/cennik">Cennik</StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/testimonials">Opinie</StyledNavLink>
+              <StyledNavLink to="/opinie">Opinie</StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/contact">Kontakt</StyledNavLink>
+              <StyledNavLink to="/kontakt">Kontakt</StyledNavLink>
             </li>
           </ul>
         </Nav>

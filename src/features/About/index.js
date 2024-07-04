@@ -1,10 +1,18 @@
 import { AboutContainer, AboutSection, AboutText, AboutTitle } from "./styled";
 import { TeamImage } from "../../common/TeamImage";
 import team from "../../assets/images/serwis.jpg";
+import { Helmet } from "react-helmet";
 
 export const About = () => {
   return (
     <AboutSection>
+      <Helmet>
+        <title>O mnie - Naprawa RTV i AGD - Przemyśl</title>
+        <meta
+          name="description"
+          content="Dowiedz się więcej o firmie specjalizującej się w naprawie RTV i AGD w Przemyślu."
+        />
+      </Helmet>
       <AboutContainer>
         <AboutTitle>Kim jestem</AboutTitle>
         <AboutText>

@@ -112,7 +112,7 @@ export const Home = () => {
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
         <HeroButton href={`tel:${serwis.phone}`}>Zadzwoń teraz</HeroButton>
-        {/* <StyledLink to="/contact">Umów wizytę</StyledLink> */}
+        {/* <StyledLink to="/kontakt">Umów wizytę</StyledLink> */}
       </HeroContainer>
     </Hero>
   );
