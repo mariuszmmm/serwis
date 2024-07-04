@@ -40,8 +40,9 @@ export const Home = () => {
   });
 
   useEffect(() => {
-    if (isPortrait === window.innerHeight > window.innerWidth) return;
-    setIsPortrait(window.innerHeight > window.innerWidth);
+    const actualState = window.innerHeight > window.innerWidth;
+    if (isPortrait === actualState) return;
+    setIsPortrait(actualState);
     setActiveScene({
       ...activeScene,
       reset: true,
