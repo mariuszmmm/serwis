@@ -30,7 +30,12 @@
     "postbuild": "react-snap"
   },
   "reactSnap": {
-    "inlineCss": true
+    "inlineCss": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "concurrency": 4
   },
   "eslintConfig": {
     "extends": [
