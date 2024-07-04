@@ -8,10 +8,12 @@ import { Testimonials } from "../../features/Testimonials";
 import { Contact } from "../../features/Contact";
 import { Footer } from "./Footer";
 import { Background } from "./Background";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Background />
       <Header />
       <Routes>

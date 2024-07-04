@@ -111,7 +111,7 @@ export const Home = () => {
           Z ponad 20-letnim doświadczeniem <br />w naprawie sprzętu RTV i AGD,
           <br />
           zapewniamy najwyższą jakość usług <br />
-          dla naszych klientów."
+          dla naszych klientów.
         </HeroText>
         {/* <StyledLink to="/kontakt">Umów wizytę</StyledLink> */}
       </HeroContainer>
