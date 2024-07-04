@@ -7,7 +7,6 @@ export const WashingMachineWrapper = styled.div`
   transform: translateX(-870px) translateY(-40px);
   z-index: -1;
   transition: opacity 1s ease-in-out;
-  opacity: 0;
   opacity: ${({ $show }) => ($show ? 1 : 0)};
   ${({ $noDisplay }) =>
     $noDisplay &&
