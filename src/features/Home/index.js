@@ -1,10 +1,4 @@
-import {
-  Hero,
-  HeroButton,
-  HeroContainer,
-  HeroText,
-  HeroTitle,
-} from "./styled";
+import { Hero, HeroButton, HeroContainer, HeroText, HeroTitle } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { CoffeeMachine } from "./CoffeeMachine";
 import { WashingMachine } from "./WashingMachine";
@@ -46,7 +40,7 @@ export const Home = () => {
   });
 
   useEffect(() => {
-    if (isPortrait === (window.innerHeight > window.innerWidth)) return;
+    if (isPortrait === window.innerHeight > window.innerWidth) return;
     setIsPortrait(window.innerHeight > window.innerWidth);
     setActiveScene({
       ...activeScene,
@@ -76,6 +70,13 @@ export const Home = () => {
 
   return (
     <Hero>
+      <Helmet>
+        <title>Serwis Telewizorów, Pralek, Zmywarek i Ekspresów do Kawy</title>
+        <meta
+          name="description"
+          content="Profesjonalny serwis AGD i RTV w Przemyślu. Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy. Szybkie i rzetelne usługi serwisowe."
+        />
+      </Helmet>
       {/* <WashingMachine show={true} center={isPortrait} />
       <CoffeeMachine show={true} center={isPortrait} />
       <Dishwasher show={true} center={isPortrait} />
