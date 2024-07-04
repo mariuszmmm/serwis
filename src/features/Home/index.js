@@ -4,7 +4,6 @@ import {
   HeroContainer,
   HeroText,
   HeroTitle,
-  StyledLink,
 } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { CoffeeMachine } from "./CoffeeMachine";
@@ -47,13 +46,14 @@ export const Home = () => {
   });
 
   useEffect(() => {
-    if (isPortrait === window.innerHeight > window.innerWidth) return;
+    if (isPortrait === (window.innerHeight > window.innerWidth)) return;
     setIsPortrait(window.innerHeight > window.innerWidth);
     setActiveScene({
       ...activeScene,
       reset: true,
       number: 0,
     });
+    // eslint-disable-next-line
   }, [window.innerHeight, window.innerWidth]);
 
   useEffect(() => {
@@ -71,6 +71,7 @@ export const Home = () => {
     );
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line
   }, [activeScene]);
 
   return (

@@ -1,5 +1,4 @@
 import {
-  Icon,
   FooterContainer,
   FooterText,
   FooterWrapper,
