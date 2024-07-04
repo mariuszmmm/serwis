@@ -83,11 +83,11 @@ export const Home = () => {
       <Dishwasher show={true} center={isPortrait} />
       <Television show={true} center={isPortrait} /> */}
 
-      <WashingMachine
+      {/* <WashingMachine
         show={activeScene.content[0]}
         center={isPortrait}
         reset={activeScene.reset}
-      />
+      /> */}
       <CoffeeMachine
         show={activeScene.content[1]}
         center={isPortrait}
