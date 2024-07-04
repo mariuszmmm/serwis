@@ -50,7 +50,7 @@ export const serwis = {
   ],
   url: {
     facebook:
-      "https://www.facebook.com/pages/Naprawa-pralek-i-sprz%C4%99tu-RTV-FOTO/657632397637879?ref=bookmarks",
+      "https://www.facebook.com/people/Naprawa-pralek-i-sprz%C4%99tu-RTV-FOTO/100063811592941/",
     google:
       "https://www.google.com/localservices/prolist?src=2&slp=UhMIARIPEg0iCy9nLzF3MGoyemho&spp=CgsvZy8xdzBqMnpoaA%3D%3D",
   },

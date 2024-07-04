@@ -9,7 +9,7 @@ export const PricingSection = styled.section`
 export const PricingContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 `;
 
 export const PricingTitle = styled.h1`

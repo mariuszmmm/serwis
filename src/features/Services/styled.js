@@ -35,5 +35,5 @@ export const ServiceText = styled.p`
 `;
 
 export const ServiceItem = styled.div`
-  margin: 0 20px 80px;
+  margin: 0 15px 80px;
 `;

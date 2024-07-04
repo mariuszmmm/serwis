@@ -88,4 +88,5 @@ export const Iframe = styled.iframe`
   height: 450px;
   border: none;
   max-width: 90vw;
+  margin: 30px 15px;
 `;
