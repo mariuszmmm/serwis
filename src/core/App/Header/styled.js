@@ -55,7 +55,8 @@ export const StyledNavLink = styled(Link)`
   border-radius: 5px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    padding: 4px;
+    padding: 3px;
+    border-radius: 2px;
   }
 
   &.active,
