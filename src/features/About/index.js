@@ -2,6 +2,7 @@ import { AboutContainer, AboutSection, AboutText, AboutTitle } from "./styled";
 import { TeamImage } from "../../common/TeamImage";
 import team from "../../assets/images/serwis.jpg";
 import { Helmet } from "react-helmet";
+import LazyLoad from "react-lazyload";
 
 export const About = () => {
   return (
@@ -31,7 +32,9 @@ export const About = () => {
           że&nbsp;Twoja pralka lub&nbsp;ekspres do&nbsp;kawy będzie działać
           jak&nbsp;nowy!
         </AboutText>
-        <TeamImage src={team} alt="serwis" />
+        <LazyLoad>
+          <TeamImage src={team} alt="serwis" />
+        </LazyLoad>
       </AboutContainer>
     </AboutSection>
   );
