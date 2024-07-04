@@ -5,6 +5,7 @@ import { WashingMachine } from "./WashingMachine";
 import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 export const Home = () => {
   const scene = {
