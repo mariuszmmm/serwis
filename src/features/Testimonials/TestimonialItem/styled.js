@@ -11,8 +11,7 @@ export const TestimonialText = styled.p`
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   margin: 0;
   text-align: justify;
-  text-justify: inter-word;
-  padding: 10px;
+  padding: 10px 20px;
 `;
 
 export const TestimonialAuthor = styled.h2`

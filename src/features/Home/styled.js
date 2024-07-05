@@ -42,7 +42,7 @@ export const HeroTitle = styled.h1`
   }
 
   @media (orientation: portrait) {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -71,11 +71,15 @@ const buttonStyles = css`
   margin: 0 10px;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   font-weight: 700;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.buttonHover};
+  }
+
+  &:active {
+    background-color: ${({ theme }) => theme.color.button};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {

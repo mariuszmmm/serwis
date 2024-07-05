@@ -9,12 +9,12 @@ export const PricingSection = styled.section`
 export const PricingContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 `;
 
 export const PricingTitle = styled.h1`
   margin-bottom: 40px;
-  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
 `;
 
 export const PricingTable = styled.table`

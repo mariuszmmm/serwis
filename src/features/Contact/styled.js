@@ -15,7 +15,7 @@ export const ContactContainer = styled.div`
 
 export const ContactTitle = styled.h1`
   margin-bottom: 40px;
-  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
 `;
 
 export const ContactForm = styled.form`
@@ -70,6 +70,7 @@ export const ContactInfo = styled.div`
 
 export const ContactText = styled.p`
   font-size: 1.2rem;
+  margin: 15px 20px;
 `;
 
 export const MailLink = styled.a`

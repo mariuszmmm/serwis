@@ -13,13 +13,12 @@ export const AboutContainer = styled.div`
 
 export const AboutTitle = styled.h1`
   margin-bottom: 40px;
-  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
 `;
 
 export const AboutText = styled.p`
   line-height: 1.8;
-  margin: 0 15px 30px;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin: 0 20px 30px;
+  font-size: clamp(0.7rem, 2.5vw, 1.2rem);
   text-align: justify;
-  text-justify: inter-word;
 `;

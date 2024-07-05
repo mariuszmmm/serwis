@@ -13,7 +13,7 @@ export const ServicesContainer = styled.div`
 
 export const ServicesTitle = styled.h1`
   margin-bottom: 40px;
-  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
 `;
 
 export const ServiceIcon = styled.img`
@@ -31,9 +31,8 @@ export const ServiceText = styled.p`
   line-height: 1.6;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   text-align: justify;
-  text-justify: inter-word;
 `;
 
 export const ServiceItem = styled.div`
-  margin: 0 15px 80px;
+  margin: 0 20px 80px;
 `;
