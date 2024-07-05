@@ -21,7 +21,7 @@ export const FooterContainer = styled.div`
   height: 100%;
 `;
 
-export const FooterText = styled.h4`
+export const FooterText = styled.p`
   margin: 0;
   font-size: clamp(0.2rem, 1.9vw, 0.6rem);
   font-weight: 200;
