@@ -1,4 +1,11 @@
-import { Hero, HeroButton, HeroContainer, HeroText, HeroTitle } from "./styled";
+import {
+  Hero,
+  HeroButton,
+  HeroContainer,
+  HeroSubText,
+  HeroText,
+  HeroTitle,
+} from "./styled";
 import { serwis } from "../../utils/serwis";
 import { CoffeeMachine } from "./CoffeeMachine";
 import { WashingMachine } from "./WashingMachine";
@@ -106,14 +113,14 @@ export const Home = () => {
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
         <HeroButton href={`tel:${serwis.phone}`}>Zadzwoń teraz</HeroButton>
-        <HeroText $notShow={isPortrait}>
+        <HeroSubText $notShow={isPortrait}>
           {" "}
           <br />
           Z ponad 20-letnim doświadczeniem <br />w naprawie sprzętu RTV i AGD,
           <br />
           zapewniamy najwyższą jakość usług <br />
           dla naszych klientów.
-        </HeroText>
+        </HeroSubText>
         {/* <StyledLink to="/kontakt">Umów wizytę</StyledLink> */}
       </HeroContainer>
     </Hero>

@@ -46,7 +46,7 @@ export const HeroTitle = styled.h1`
   }
 `;
 
-export const HeroText = styled.h2`
+const textStyled = css`
   opacity: ${({ $notShow }) => ($notShow ? 0 : 1)};
   margin-bottom: 50px;
   font-size: clamp(0.8rem, 2.5vw, 1.4rem);
@@ -60,6 +60,14 @@ export const HeroText = styled.h2`
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 20px;
   }
+`;
+export const HeroText = styled.h2`
+  ${textStyled}
+`;
+
+export const HeroSubText = styled.h3`
+  ${textStyled}
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
 `;
 
 const buttonStyles = css`
