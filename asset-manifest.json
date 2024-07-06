@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.07ddd984.js",
+    "main.js": "/static/js/main.d846e34d.js",
     "static/js/453.8c8d5fe1.chunk.js": "/static/js/453.8c8d5fe1.chunk.js",
     "static/media/naprawa-ekspresow.png": "/static/media/naprawa-ekspresow.b21ea2d857e91d861dbc.png",
     "static/media/naprawa-pralki.png": "/static/media/naprawa-pralki.ebf01251566f210cb323.png",
@@ -10,10 +10,10 @@
     "index.html": "/index.html",
     "static/media/google.svg": "/static/media/google.9e318c9a515f515ca2dd0bb68990eafa.svg",
     "static/media/facebook.svg": "/static/media/facebook.078932f155a733f131c178393d735fd6.svg",
-    "main.07ddd984.js.map": "/static/js/main.07ddd984.js.map",
+    "main.d846e34d.js.map": "/static/js/main.d846e34d.js.map",
     "453.8c8d5fe1.chunk.js.map": "/static/js/453.8c8d5fe1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.07ddd984.js"
+    "static/js/main.d846e34d.js"
   ]
 }
