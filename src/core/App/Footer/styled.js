@@ -41,10 +41,9 @@ export const SocialIcon = styled.a`
   text-decoration: none;
   gap: 5px;
   color: ${({ theme }) => theme.color.white};
-  transition: color 0.2s ease, transform 0.05s ease;
+  transition: color 0.3s ease, transform 0.05s ease;
 
   &:hover {
-    transform: scale(1.05);
     color: ${({ theme }) => theme.color.button};
   }
 
@@ -59,10 +58,6 @@ const styledIcon = (icon) => styled(icon)`
   border-radius: 50%;
   color: ${({ theme }) => theme.color.white};
   color: inherit;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 `;
 
 export const FacebookIcon = styledIcon(facebookIcon);

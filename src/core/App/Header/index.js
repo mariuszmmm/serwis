@@ -17,7 +17,7 @@ export const Header = () => {
               <StyledNavLink to="/">Strona Główna</StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/o-nas">O mnie</StyledNavLink>
+              <StyledNavLink to="/o-mnie">O mnie</StyledNavLink>
             </li>
             <li>
               <StyledNavLink to="/uslugi">Usługi</StyledNavLink>
