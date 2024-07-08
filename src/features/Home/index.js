@@ -12,6 +12,7 @@ import { WashingMachine } from "./WashingMachine";
 import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 export const Home = () => {
   const scene = {
@@ -82,6 +83,81 @@ export const Home = () => {
       <CoffeeMachine show={true} center={isPortrait} />
       <Dishwasher show={true} center={isPortrait} />
       <Television show={true} center={isPortrait} /> */}
+
+      <Helmet>
+        <title>
+          Naprawa pralek, zmywarek, ekspresów do kawy i telewizorów w Przemyślu
+          | Serwis RTV AGD
+        </title>
+        <meta
+          name="description"
+          content="Profesjonalna naprawa i serwis pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu. Szybka pomoc i fachowa obsługa."
+        />
+        <meta
+          name="keywords"
+          content="naprawa, serwis, RTV, AGD, telewizory, pralki, zmywarki, ekspresy do kawy, Przemyśl"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Naprawa pralek, zmywarek, ekspresów do kawy i telewizorów",
+            // "image": "https://example.com/logo.jpg",
+            "@id": "https://naprawaprzemysl.pl",
+            url: "https://naprawaprzemysl.pl",
+            telephone: "+48 790 258 612",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Generała Józefa Sowińskiego 2",
+              addressLocality: "Przemyśl",
+              postalCode: "37-700",
+              addressCountry: "PL",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 49.784,
+              longitude: 22.767,
+            },
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                ],
+                opens: "09:30",
+                closes: "17:00",
+              },
+            ],
+            sameAs: ["https://www.facebook.com/profile.php?id=100063811592941"],
+            serviceType: [
+              {
+                "@type": "Service",
+                serviceType: "Naprawa pralek",
+                areaServed: "Przemyśl",
+              },
+              {
+                "@type": "Service",
+                serviceType: "Naprawa zmywarek",
+                areaServed: "Przemyśl",
+              },
+              {
+                "@type": "Service",
+                serviceType: "Naprawa ekspresów do kawy",
+                areaServed: "Przemyśl",
+              },
+              {
+                "@type": "Service",
+                serviceType: "Naprawa telewizorów",
+                areaServed: "Przemyśl",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
 
       <WashingMachine
         show={activeScene.content[0]}

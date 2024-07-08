@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import {
   ServiceItem,
   ServiceText,
@@ -10,6 +11,18 @@ import {
 export const Services = () => {
   return (
     <ServicesSection>
+      <Helmet>
+        <title>Nasze usługi | Serwis RTV AGD w Przemyślu</title>
+        <meta
+          name="description"
+          content="Oferujemy profesjonalną naprawę pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
+        />
+        <meta
+          name="keywords"
+          content="naprawa, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
+        />
+      </Helmet>
+
       <ServicesContainer>
         <ServicesTitle>Zakres usług</ServicesTitle>
         <ServiceItem>
