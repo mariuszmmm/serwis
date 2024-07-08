@@ -34,11 +34,11 @@ export const Contact = () => {
         </ContactForm> */}
         <ContactInfo>
           <ContactText>
-            Telefon:{" "}
+            telefon:{" "}
             <PhoneLink href={`tel:${serwis.phone}`}> {serwis.phone}</PhoneLink>
           </ContactText>
           <ContactText>
-            Email:{" "}
+            e-mail:{" "}
             <MailLink href={`mailto:${serwis.email}}`}>{serwis.email}</MailLink>
           </ContactText>
           <Iframe
