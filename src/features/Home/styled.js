@@ -13,7 +13,7 @@ export const Hero = styled.section`
   }
 `;
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.header`
   max-width: 1200px;
   min-height: 600px;
   margin: 0 auto;
