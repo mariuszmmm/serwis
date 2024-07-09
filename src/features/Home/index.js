@@ -92,8 +92,7 @@ export const Home = () => {
         <div>
           <Helmet>
             <title>
-              Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy w
-              Przemyślu | Serwis RTV AGD
+              Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy | Serwis
             </title>
             <meta
               name="description"
