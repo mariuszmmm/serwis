@@ -7,21 +7,25 @@ import {
 } from "./styled";
 import { PricingRow } from "./PricingRow";
 import { serwis } from "../../utils/serwis";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 export const Pricing = () => {
   return (
     <PricingSection>
-      <Helmet>
-        <title>Cennik | Serwis RTV AGD w Przemyślu</title>
-        <meta
-          name="description"
-          content="Sprawdź mój cennik usług naprawy pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
-        />
-        <meta
-          name="keywords"
-          content="cennik, usługi, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
-        />
-      </Helmet>
+      <HelmetProvider>
+        <div>
+          <Helmet>
+            <title>Cennik | Serwis RTV AGD w Przemyślu</title>
+            <meta
+              name="description"
+              content="Sprawdź mój cennik usług naprawy pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
+            />
+            <meta
+              name="keywords"
+              content="cennik, usługi, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
+            />
+          </Helmet>
+        </div>
+      </HelmetProvider>
       <PricingContainer>
         <PricingTitle>Cennik</PricingTitle>
         <PricingTable>

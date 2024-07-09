@@ -14,22 +14,26 @@ import {
   PhoneLink,
 } from "./styled";
 import { serwis } from "../../utils/serwis";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export const Contact = () => {
   return (
     <ContactSection>
-      <Helmet>
-        <title>Kontakt | Serwis RTV AGD w Przemyślu</title>
-        <meta
-          name="description"
-          content="Skontaktuj się z nami pod numerem telefonu +48 790 258 612 lub odwiedź nas w Przemyślu przy ulicy Generała Józefa Sowińskiego 2."
-        />
-        <meta
-          name="keywords"
-          content="kontakt, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
-        />
-      </Helmet>
+      <HelmetProvider>
+        <div>
+          <Helmet>
+            <title>Kontakt | Serwis RTV AGD w Przemyślu</title>
+            <meta
+              name="description"
+              content="Skontaktuj się z nami pod numerem telefonu +48 790 258 612 lub odwiedź nas w Przemyślu przy ulicy Generała Józefa Sowińskiego 2."
+            />
+            <meta
+              name="keywords"
+              content="kontakt, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
+            />
+          </Helmet>
+        </div>
+      </HelmetProvider>
       <ContactContainer>
         <ContactTitle>Kontakt</ContactTitle>
         {/* <ContactForm>

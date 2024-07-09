@@ -46,25 +46,18 @@ export const WashingMachineWrapper = styled.div`
       `}
   }
 
-  ${({ $center }) =>
-    $center &&
-    css`
-      top: clamp(220px, 55vw, 350px);
-      transform: translateX(-50%) scale(50%);
+  @media (orientation: portrait) {
+    top: clamp(400px, 45vw, 550px);
+    transform: translateX(-50%) translateY(170px) scale(50%);
 
-      @media (orientation: portrait) {
-        top: clamp(400px, 45vw, 550px);
-        transform: translateX(-50%) translateY(170px) scale(50%);
+    @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+      transform: translateX(-50%) translateY(-60px) scale(40%);
+    }
 
-        @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-          transform: translateX(-50%) translateY(-60px) scale(40%);
-        }
-
-        @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-          transform: translateX(-50%) translateY(0) scale(40%);
-        }
-      }
-    `}
+    @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+      transform: translateX(-50%) translateY(0) scale(40%);
+    }
+  }
 `;
 
 export const Image = styled.img`
@@ -73,11 +66,7 @@ export const Image = styled.img`
     drop-shadow(0px 20px 30px rgba(40, 40, 40, 0.4));
 
   @media (orientation: portrait) {
-    ${({ $center }) =>
-      $center &&
-      css`
-        transform: scale(180%);
-        max-width: 80vw;
-      `};
+    transform: scale(180%);
+    max-width: 80vw;
   }
 `;

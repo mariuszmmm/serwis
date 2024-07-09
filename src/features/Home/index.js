@@ -12,7 +12,7 @@ import { WashingMachine } from "./WashingMachine";
 import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export const Home = () => {
   const scene = {
@@ -47,7 +47,7 @@ export const Home = () => {
     content: isPortrait ? mobileScene[0] : scene[0],
   });
 
-  useEffect(() => {
+  const handleResize = () => {
     const actualState = window.innerHeight > window.innerWidth;
     if (isPortrait === actualState) return;
     setIsPortrait(actualState);
@@ -56,6 +56,15 @@ export const Home = () => {
       reset: true,
       number: 0,
     });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+
     // eslint-disable-next-line
   }, [window.innerHeight, window.innerWidth]);
 
@@ -79,106 +88,86 @@ export const Home = () => {
 
   return (
     <Hero>
-      {/* <WashingMachine show={true} center={isPortrait} />
-      <CoffeeMachine show={true} center={isPortrait} />
-      <Dishwasher show={true} center={isPortrait} />
-      <Television show={true} center={isPortrait} /> */}
-
-      <Helmet>
-        <title>
-          Naprawa pralek, zmywarek, ekspresów do kawy i telewizorów w Przemyślu
-          | Serwis RTV AGD
-        </title>
-        <meta
-          name="description"
-          content="Profesjonalna naprawa i serwis pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu. Szybka pomoc i fachowa obsługa."
-        />
-        <meta
-          name="keywords"
-          content="naprawa, serwis, RTV, AGD, telewizory, pralki, zmywarki, ekspresy do kawy, Przemyśl"
-        />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Naprawa pralek, zmywarek, ekspresów do kawy i telewizorów",
-            // "image": "https://example.com/logo.jpg",
-            "@id": "https://naprawaprzemysl.pl",
-            url: "https://naprawaprzemysl.pl",
-            telephone: "+48 790 258 612",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Generała Józefa Sowińskiego 2",
-              addressLocality: "Przemyśl",
-              postalCode: "37-700",
-              addressCountry: "PL",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 49.784,
-              longitude: 22.767,
-            },
-            openingHoursSpecification: [
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
+      <HelmetProvider>
+        <div>
+          <Helmet>
+            <title>
+              Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy w
+              Przemyślu | Serwis RTV AGD
+            </title>
+            <meta
+              name="description"
+              content="Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa."
+            />
+            <meta
+              name="keywords"
+              content="naprawa, serwis, RTV, AGD, telewizory, pralki, zmywarki, ekspresy do kawy, Przemyśl"
+            />
+            <script type="application/ld+json">
+              {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                name: "Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy",
+                "@id": "https://naprawaprzemysl.pl",
+                url: "https://naprawaprzemysl.pl",
+                telephone: "+48 790 258 612",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Generała Józefa Sowińskiego 2",
+                  addressLocality: "Przemyśl",
+                  postalCode: "37-700",
+                  addressCountry: "PL",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 49.782778,
+                  longitude: 22.776028,
+                },
+                openingHoursSpecification: [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                    ],
+                    opens: "09:30",
+                    closes: "17:00",
+                  },
                 ],
-                opens: "09:30",
-                closes: "17:00",
-              },
-            ],
-            sameAs: ["https://www.facebook.com/profile.php?id=100063811592941"],
-            serviceType: [
-              {
-                "@type": "Service",
-                serviceType: "Naprawa pralek",
-                areaServed: "Przemyśl",
-              },
-              {
-                "@type": "Service",
-                serviceType: "Naprawa zmywarek",
-                areaServed: "Przemyśl",
-              },
-              {
-                "@type": "Service",
-                serviceType: "Naprawa ekspresów do kawy",
-                areaServed: "Przemyśl",
-              },
-              {
-                "@type": "Service",
-                serviceType: "Naprawa telewizorów",
-                areaServed: "Przemyśl",
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
-
-      <WashingMachine
-        show={activeScene.content[0]}
-        center={isPortrait}
-        reset={activeScene.reset}
-      />
-      <CoffeeMachine
-        show={activeScene.content[1]}
-        center={isPortrait}
-        reset={activeScene.reset}
-      />
-      <Dishwasher
-        show={activeScene.content[2]}
-        center={isPortrait}
-        reset={activeScene.reset}
-      />
-      <Television
-        show={activeScene.content[3]}
-        center={isPortrait}
-        reset={activeScene.reset}
-      />
+                sameAs: [
+                  "https://www.facebook.com/profile.php?id=100063811592941",
+                ],
+                serviceType: [
+                  {
+                    "@type": "Service",
+                    serviceType: "Naprawa pralek",
+                    areaServed: "Przemyśl",
+                  },
+                  {
+                    "@type": "Service",
+                    serviceType: "Naprawa zmywarek",
+                    areaServed: "Przemyśl",
+                  },
+                  {
+                    "@type": "Service",
+                    serviceType: "Naprawa ekspresów do kawy",
+                    areaServed: "Przemyśl",
+                  },
+                  {
+                    "@type": "Service",
+                    serviceType: "Naprawa telewizorów",
+                    areaServed: "Przemyśl",
+                  },
+                ],
+              })}
+            </script>
+          </Helmet>
+          {/* Inne elementy Twojego komponentu */}
+        </div>
+      </HelmetProvider>
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa pralek, zmywarek,
@@ -199,6 +188,30 @@ export const Home = () => {
         </HeroSubText>
         {/* <StyledLink to="/kontakt">Umów wizytę</StyledLink> */}
       </HeroContainer>
+      <WashingMachine
+        show={activeScene.content[0]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <CoffeeMachine
+        show={activeScene.content[1]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <Dishwasher
+        show={activeScene.content[2]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <Television
+        show={activeScene.content[3]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      {/* <WashingMachine show={true} center={isPortrait} />
+      <CoffeeMachine show={true} center={isPortrait} />
+      <Dishwasher show={true} center={isPortrait} />
+      <Television show={true} center={isPortrait} /> */}
     </Hero>
   );
 };

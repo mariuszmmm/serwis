@@ -2,22 +2,26 @@ import { AboutContainer, AboutSection, AboutText, AboutTitle } from "./styled";
 import { TeamImage } from "../../common/TeamImage";
 import team from "../../assets/images/serwis.jpg";
 import LazyLoad from "react-lazyload";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export const About = () => {
   return (
     <AboutSection>
-      <Helmet>
-        <title>O mnie | Serwis RTV AGD w Przemyślu</title>
-        <meta
-          name="description"
-          content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
-        />
-        <meta
-          name="keywords"
-          content="o mnie, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
-        />
-      </Helmet>
+      <HelmetProvider>
+        <div>
+          <Helmet>
+            <title>O mnie | Serwis RTV AGD w Przemyślu</title>
+            <meta
+              name="description"
+              content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
+            />
+            <meta
+              name="keywords"
+              content="o mnie, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
+            />
+          </Helmet>
+        </div>
+      </HelmetProvider>
       <AboutContainer>
         <AboutTitle>Kim jestem</AboutTitle>
         <AboutText>
