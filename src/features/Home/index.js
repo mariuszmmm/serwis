@@ -97,7 +97,7 @@ export const Home = () => {
         <div>
           <Helmet>
             <title>
-              Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy | Serwis
+              Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy
             </title>
             <meta
               name="description"
