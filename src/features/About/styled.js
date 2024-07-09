@@ -1,9 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const AboutSection = styled.section`
   padding: 100px 0;
   text-align: center;
   min-height: calc(100vh - 5vh);
+  transition: opacity 1s ease-in-out;
+  ${({ $show }) =>
+    $show &&
+    css`
+      opacity: 1;
+    `}
 `;
 
 export const AboutContainer = styled.div`

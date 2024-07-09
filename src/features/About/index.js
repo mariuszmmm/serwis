@@ -3,10 +3,16 @@ import { TeamImage } from "../../common/TeamImage";
 import team from "../../assets/images/serwis.jpg";
 import LazyLoad from "react-lazyload";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useEffect, useState } from "react";
 
 export const About = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
   return (
-    <AboutSection>
+    <AboutSection $show={show}>
       <HelmetProvider>
         <div>
           <Helmet>

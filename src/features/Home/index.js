@@ -46,6 +46,7 @@ export const Home = () => {
     number: 0,
     content: isPortrait ? mobileScene[0] : scene[0],
   });
+  const [show, setShow] = useState(false);
 
   const handleResize = () => {
     const actualState = window.innerHeight > window.innerWidth;
@@ -86,8 +87,12 @@ export const Home = () => {
     // eslint-disable-next-line
   }, [activeScene]);
 
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
   return (
-    <Hero>
+    <Hero $show={show}>
       <HelmetProvider>
         <div>
           <Helmet>

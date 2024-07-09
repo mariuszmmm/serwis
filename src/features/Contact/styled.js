@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ContactSection = styled.section`
   display: flex;
@@ -6,6 +6,12 @@ export const ContactSection = styled.section`
   padding: 100px 0 20px;
   text-align: center;
   min-height: calc(100vh - 5vh);
+  transition: opacity 1s ease-in-out;
+  ${({ $show }) =>
+    $show &&
+    css`
+      opacity: 1;
+    `}
 `;
 
 export const ContactContainer = styled.div`

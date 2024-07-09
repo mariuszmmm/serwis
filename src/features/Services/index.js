@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   ServiceItem,
   ServiceText,
@@ -9,8 +10,13 @@ import {
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export const Services = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
   return (
-    <ServicesSection>
+    <ServicesSection $show={show}>
       <HelmetProvider>
         <div>
           <Helmet>

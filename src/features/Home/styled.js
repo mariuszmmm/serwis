@@ -7,6 +7,13 @@ export const Hero = styled.section`
   min-height: calc(100vh - 5vh);
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  ${({ $show }) =>
+    $show &&
+    css`
+      opacity: 1;
+    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 12vh 0 6vh;

@@ -15,10 +15,16 @@ import {
 } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useEffect, useState } from "react";
 
 export const Contact = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
   return (
-    <ContactSection>
+    <ContactSection $show={show}>
       <HelmetProvider>
         <div>
           <Helmet>

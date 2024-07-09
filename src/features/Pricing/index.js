@@ -8,9 +8,15 @@ import {
 import { PricingRow } from "./PricingRow";
 import { serwis } from "../../utils/serwis";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useEffect, useState } from "react";
 export const Pricing = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
   return (
-    <PricingSection>
+    <PricingSection $show={show}>
       <HelmetProvider>
         <div>
           <Helmet>
