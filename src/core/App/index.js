@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
   Navigate,
+  useLocation,
 } from "react-router-dom";
 import { Header } from "./Header";
 import { About } from "../../features/About";
@@ -14,10 +15,18 @@ import { Contact } from "../../features/Contact";
 import { Footer } from "./Footer";
 import { Background } from "./Background";
 import ScrollToTop from "./ScrollToTop";
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Background />
       <Header />
@@ -31,8 +40,14 @@ const App = () => {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
 
-export default App;
+const AppWrapper = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;

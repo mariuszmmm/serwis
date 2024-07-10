@@ -13,6 +13,7 @@ import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import ReactGA from "react-ga";
 
 export const Home = () => {
   const scene = {
@@ -91,6 +92,13 @@ export const Home = () => {
     setShow(true);
   }, []);
 
+  const handleClick = () => {
+    ReactGA.event({
+      category: "User",
+      action: "Clicked on button",
+    });
+  };
+
   return (
     <Hero $show={show}>
       <HelmetProvider>
@@ -144,26 +152,50 @@ export const Home = () => {
                 sameAs: [
                   "https://www.facebook.com/profile.php?id=100063811592941",
                 ],
-                serviceType: [
+                makesOffer: [
                   {
-                    "@type": "Service",
-                    serviceType: "Naprawa pralek",
-                    areaServed: "Przemyśl",
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Naprawa pralek",
+                    },
+                    areaServed: {
+                      "@type": "Place",
+                      name: "Przemyśl",
+                    },
                   },
                   {
-                    "@type": "Service",
-                    serviceType: "Naprawa zmywarek",
-                    areaServed: "Przemyśl",
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Naprawa zmywarek",
+                    },
+                    areaServed: {
+                      "@type": "Place",
+                      name: "Przemyśl",
+                    },
                   },
                   {
-                    "@type": "Service",
-                    serviceType: "Naprawa ekspresów do kawy",
-                    areaServed: "Przemyśl",
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Naprawa ekspresów do kawy",
+                    },
+                    areaServed: {
+                      "@type": "Place",
+                      name: "Przemyśl",
+                    },
                   },
                   {
-                    "@type": "Service",
-                    serviceType: "Naprawa telewizorów",
-                    areaServed: "Przemyśl",
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Naprawa telewizorów",
+                    },
+                    areaServed: {
+                      "@type": "Place",
+                      name: "Przemyśl",
+                    },
                   },
                 ],
               })}
@@ -181,7 +213,9 @@ export const Home = () => {
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
-        <HeroButton href={`tel:${serwis.phone}`}>Zadzwoń teraz</HeroButton>
+        <HeroButton href={`tel:${serwis.phone}`} onClick={handleClick}>
+          Zadzwoń teraz
+        </HeroButton>
         <HeroSubText $notShow={isPortrait}>
           {" "}
           <br />

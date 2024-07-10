@@ -3,8 +3,9 @@ import styled, { css } from "styled-components";
 export const TestimonialsSection = styled.section`
   padding: 100px 0;
   text-align: center;
+  opacity: 0;
   min-height: calc(100vh - 5vh);
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   ${({ $show }) =>
     $show &&
     css`

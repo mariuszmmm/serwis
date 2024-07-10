@@ -4,7 +4,8 @@ export const PricingSection = styled.section`
   padding: 100px 0;
   text-align: center;
   min-height: calc(100vh - 5vh);
-  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   ${({ $show }) =>
     $show &&
     css`
