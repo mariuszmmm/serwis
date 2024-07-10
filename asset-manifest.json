@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.js": "/static/js/main.2b9185e9.js",
+    "main.js": "/static/js/main.5d19345e.js",
     "static/js/453.8c8d5fe1.chunk.js": "/static/js/453.8c8d5fe1.chunk.js",
-    "static/media/naprawa-ekspresow.png": "/static/media/naprawa-ekspresow.b21ea2d857e91d861dbc.png",
-    "static/media/naprawa-pralki.png": "/static/media/naprawa-pralki.ebf01251566f210cb323.png",
-    "static/media/serwis-zmywarek.png": "/static/media/serwis-zmywarek.441b0d9d99a3e9366558.png",
-    "static/media/serwis-telewizorow.png": "/static/media/serwis-telewizorow.d139433f8aa306c09d81.png",
-    "static/media/serwis.jpg": "/static/media/serwis.ffebcbcd6c6a0d381690.jpg",
+    "static/media/naprawa-ekspresow.png": "/static/media/naprawa-ekspresow.80854c6e539a83b1cfc2.png",
+    "static/media/naprawa-pralki.png": "/static/media/naprawa-pralki.be9437890ed6f69c7805.png",
+    "static/media/mapa.png": "/static/media/mapa.1896942334552e1099bf.png",
+    "static/media/serwis-zmywarek.png": "/static/media/serwis-zmywarek.4baad06506fc6c0d6aa5.png",
+    "static/media/serwis-telewizorow.png": "/static/media/serwis-telewizorow.0975993ea051a3c35495.png",
+    "static/media/serwis.jpg": "/static/media/serwis.fe1b951132b69a0d42f1.jpg",
     "static/media/google.svg": "/static/media/google.9e318c9a515f515ca2dd0bb68990eafa.svg",
     "index.html": "/index.html",
     "static/media/facebook.svg": "/static/media/facebook.078932f155a733f131c178393d735fd6.svg",
-    "main.2b9185e9.js.map": "/static/js/main.2b9185e9.js.map",
+    "main.5d19345e.js.map": "/static/js/main.5d19345e.js.map",
     "453.8c8d5fe1.chunk.js.map": "/static/js/453.8c8d5fe1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2b9185e9.js"
+    "static/js/main.5d19345e.js"
   ]
 }
