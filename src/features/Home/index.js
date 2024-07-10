@@ -115,6 +115,16 @@ export const Home = () => {
               name="keywords"
               content="naprawa, serwis, RTV, AGD, telewizory, pralki, zmywarki, ekspresy do kawy, Przemyśl"
             />
+            <link rel="canonical" href="https://naprawaprzemysl.pl/" />
+            <meta
+              property="og:title"
+              content="Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy"
+            />
+            <meta
+              property="og:description"
+              content="Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa."
+            />
+            <meta property="og:url" content="https://naprawaprzemysl.pl/" />
             <script type="application/ld+json">
               {JSON.stringify({
                 "@context": "https://schema.org",

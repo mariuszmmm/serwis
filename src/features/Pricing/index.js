@@ -29,6 +29,19 @@ export const Pricing = () => {
               name="keywords"
               content="cennik, usługi, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
             />
+            <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
+            <meta
+              property="og:title"
+              content="Cennik | Serwis RTV AGD w Przemyślu"
+            />
+            <meta
+              property="og:description"
+              content="Sprawdź nasz cennik usług serwisu RTV i AGD w Przemyślu."
+            />
+            <meta
+              property="og:url"
+              content="https://naprawaprzemysl.pl/cennik"
+            />
           </Helmet>
         </div>
       </HelmetProvider>
