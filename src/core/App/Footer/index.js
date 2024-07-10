@@ -19,6 +19,12 @@ export const Footer = () => {
         <SocialIcons>
           <FooterText>
             <SocialIcon href={serwis.url.facebook} target="_blank">
+              <a
+                href="https://www.facebook.com/profile.php?id=100063811592941"
+                target="_blank"
+              >
+                Facebook
+              </a>
               facebook
               <FacebookIcon />
             </SocialIcon>{" "}
