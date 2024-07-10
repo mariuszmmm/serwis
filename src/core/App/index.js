@@ -16,13 +16,16 @@ import { Footer } from "./Footer";
 import { Background } from "./Background";
 import ScrollToTop from "./ScrollToTop";
 import { useEffect } from "react";
-import ReactGA from "react-ga";
 
 const App = () => {
-  const location = useLocation();
-
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
+    initGA();
+    logPageView();
+  }, []);
+
+  const location = useLocation();
+  useEffect(() => {
+    logPageView();
   }, [location]);
 
   return (
