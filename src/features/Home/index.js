@@ -121,7 +121,7 @@ export const Home = () => {
               {JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
-                name: "Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy",
+                name: "Serwis RTV i AGD",
                 "@id": "https://naprawaprzemysl.pl",
                 url: "https://naprawaprzemysl.pl",
                 telephone: "+48 790 258 612",
