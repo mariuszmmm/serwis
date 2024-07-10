@@ -223,7 +223,11 @@ export const Home = () => {
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
-        <HeroButton href={`tel:${serwis.phone}`} onClick={handleClick}>
+        <HeroButton
+          href={`tel:${serwis.phone}`}
+          title="tel. +48 790-258-612"
+          onClick={handleClick}
+        >
           Zadzwoń teraz
         </HeroButton>
         <HeroSubText $notShow={isPortrait}>
