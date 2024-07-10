@@ -5,7 +5,7 @@ export const WashingMachineWrapper = styled.div`
   top: 220px;
   left: 50%;
   transform: translateX(-870px) translateY(-40px);
-  z-index: ${({ $show }) => ($show ? 1 : -1)};;
+  z-index: ${({ $show }) => ($show ? 1 : -1)};
   transition: opacity 1s ease-in-out;
   opacity: ${({ $show }) => ($show ? 1 : 0)};
   ${({ $noDisplay }) =>
@@ -64,9 +64,18 @@ export const Image = styled.img`
   transform: scale(70%);
   filter: drop-shadow(10px 10px 15px rgba(40, 40, 40, 0.7))
     drop-shadow(0px 20px 30px rgba(40, 40, 40, 0.4));
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(73%);
+  }
 
   @media (orientation: portrait) {
     transform: scale(180%);
     max-width: 80vw;
+
+    &:hover {
+      transform: scale(185%);
+    }
   }
 `;

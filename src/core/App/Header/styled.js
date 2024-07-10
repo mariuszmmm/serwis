@@ -51,7 +51,7 @@ export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   padding: 8px 10px;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   display: flex;
   border-radius: 5px;
 

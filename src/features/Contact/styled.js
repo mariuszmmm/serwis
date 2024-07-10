@@ -7,7 +7,7 @@ export const ContactSection = styled.section`
   text-align: center;
   min-height: calc(100vh - 5vh);
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   ${({ $show }) =>
     $show &&
     css`
@@ -64,7 +64,7 @@ export const ContactButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.buttonHover};

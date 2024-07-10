@@ -14,8 +14,6 @@ import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import ReactGA from "react-ga4";
-// import { Link } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
 
 export const Home = () => {
   const scene = {
@@ -228,35 +226,26 @@ export const Home = () => {
         </HeroSubText>
         {/* <StyledLink to="/kontakt">Umów wizytę</StyledLink> */}
       </HeroContainer>
-
-      <Link to="/uslugi#naprawa-pralek">
-        <WashingMachine
-          show={activeScene.content[0]}
-          center={isPortrait}
-          reset={activeScene.reset}
-        />
-      </Link>
-      <Link smooth to="/uslugi#naprawa-ekspresów">
-        <CoffeeMachine
-          show={activeScene.content[1]}
-          center={isPortrait}
-          reset={activeScene.reset}
-        />
-      </Link>
-      <Link smooth to="/uslugi#naprawa-zmywarek">
-        <Dishwasher
-          show={activeScene.content[2]}
-          center={isPortrait}
-          reset={activeScene.reset}
-        />
-      </Link>
-      <Link smooth to="/uslugi#naprawa-telewizorów">
-        <Television
-          show={activeScene.content[3]}
-          center={isPortrait}
-          reset={activeScene.reset}
-        />
-      </Link>
+      <WashingMachine
+        show={activeScene.content[0]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <CoffeeMachine
+        show={activeScene.content[1]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <Dishwasher
+        show={activeScene.content[2]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
+      <Television
+        show={activeScene.content[3]}
+        center={isPortrait}
+        reset={activeScene.reset}
+      />
       {/* <WashingMachine show={true} center={isPortrait} />
       <CoffeeMachine show={true} center={isPortrait} />
       <Dishwasher show={true} center={isPortrait} />
