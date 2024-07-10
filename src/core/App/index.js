@@ -16,6 +16,7 @@ import { Footer } from "./Footer";
 import { Background } from "./Background";
 import ScrollToTop from "./ScrollToTop";
 import { useEffect } from "react";
+import { initGA, logPageView } from "./analytics";
 
 const App = () => {
   useEffect(() => {

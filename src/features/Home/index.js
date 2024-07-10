@@ -13,7 +13,7 @@ import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 

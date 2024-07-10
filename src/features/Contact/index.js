@@ -9,7 +9,7 @@ import {
   ContactSection,
   ContactText,
   ContactTitle,
-  Iframe,
+  // Iframe,
   Image,
   ImageContainer,
   MailLink,
@@ -75,6 +75,7 @@ export const Contact = () => {
             <a
               href="https://www.google.com/maps/place/Naprawa+pralek+i+sprz%C4%99tu+RTV+-+naprawa+ekspres%C3%B3w+do+kawy,+naprawa+telewizor%C3%B3w,+naprawa+zmywarki,+serwis+agd,/@49.7828141,22.7734755,17z/data=!4m6!3m5!1s0x473b7f241be960ad:0xfc3cd55238f8f8a6!8m2!3d49.7827725!4d22.776029!16s%2Fg%2F1w0j2zhh?entry=ttu"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={map} alt="mapa" />
             </a>
