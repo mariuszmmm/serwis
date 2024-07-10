@@ -98,3 +98,16 @@ export const Iframe = styled.iframe`
   max-width: 90vw;
   margin: 30px 15px;
 `;
+
+export const ImageContainer = styled.div`
+  margin-top: 20px;
+  width: 600px;
+  max-width: 90vw;
+  aspect-ratio: 600/450;
+  border: none;
+  margin: 30px 15px;
+`;
+
+export const Image = styled.img`
+  width: 100%;
+`;

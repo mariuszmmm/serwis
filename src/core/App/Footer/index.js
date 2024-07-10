@@ -18,19 +18,23 @@ export const Footer = () => {
         </FooterText>
         <SocialIcons>
           <FooterText>
-            <SocialIcon href={serwis.url.facebook} target="_blank">
-              <a
-                href="https://www.facebook.com/profile.php?id=100063811592941"
-                target="_blank"
-              >
-                Facebook
-              </a>
+            <SocialIcon
+              href={serwis.url.facebook}
+              title="Odwiedź naszą stronę na Facebooku"
+              aria-label="Facebook strona Serwis RTV i AGD"
+              target="_blank"
+            >
               facebook
               <FacebookIcon />
             </SocialIcon>{" "}
           </FooterText>
           <FooterText>
-            <SocialIcon href={serwis.url.google} target="_blank">
+            <SocialIcon
+              href={serwis.url.google}
+              title="Odwiedź naszą wizytówkę w Google"
+              aria-label="Google strona Serwis RTV i AGD"
+              target="_blank"
+            >
               google
               <GoogleIcon />
             </SocialIcon>

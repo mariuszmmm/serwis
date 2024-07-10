@@ -36,7 +36,7 @@ export const Services = () => {
       <ServicesContainer>
         <ServicesTitle>Zakres usług</ServicesTitle>
         <main>
-          <ServiceItem>
+          <ServiceItem id="naprawa-pralek">
             <ServiceTitle>Naprawa pralek</ServiceTitle>
             <ServiceText>
               Kompleksowe usługi naprawy pralek automatycznych wszystkich marek.
@@ -50,7 +50,7 @@ export const Services = () => {
               w&nbsp;jak najkrótszym czasie.
             </ServiceText>
           </ServiceItem>
-          <ServiceItem>
+          <ServiceItem id="naprawa-zmywarek">
             <ServiceTitle>Naprawa zmywarek</ServiceTitle>
             <ServiceText>
               Specjalistyczna naprawa zmywarek różnych marek, gwarantująca ich
@@ -64,7 +64,7 @@ export const Services = () => {
               napraw.
             </ServiceText>
           </ServiceItem>
-          <ServiceItem>
+          <ServiceItem id="naprawa-ekspresów">
             <ServiceTitle>Naprawa ekspresów do kawy</ServiceTitle>
             <ServiceText>
               Profesjonalna naprawa ekspresów do&nbsp;kawy, niezależnie od marki
@@ -77,7 +77,7 @@ export const Services = () => {
               kawą bez żadnych przerw.
             </ServiceText>
           </ServiceItem>
-          <ServiceItem>
+          <ServiceItem id="naprawa-telewizorów">
             <ServiceTitle>Naprawa telewizorów</ServiceTitle>
             <ServiceText>
               Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek,

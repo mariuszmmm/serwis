@@ -42,4 +42,5 @@ export const ServiceText = styled.p`
 
 export const ServiceItem = styled.div`
   margin: 0 20px 80px;
+  scroll-margin-top: clamp(4rem, 7vw, 5.5rem);
 `;
