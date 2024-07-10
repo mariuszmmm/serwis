@@ -6,7 +6,7 @@ export const CoffeeMachine = ({ show, center, reset }) => {
   return (
     <CoffeeMachineWrapper $show={show} $center={center} $noDisplay={reset}>
       <LazyLoad>
-        <Link smooth to="/uslugi#naprawa-ekspresów">
+        <Link to="/uslugi#naprawa-ekspresów">
           <Image
             src={ekspres}
             alt="Naprawa ekspresów do kawy w Przemyślu"

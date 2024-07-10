@@ -6,7 +6,7 @@ export const Television = ({ show, center, reset }) => {
   return (
     <TelevisionWrapper $show={show} $center={center} $noDisplay={reset}>
       <LazyLoad>
-        <Link smooth to="/uslugi#naprawa-telewizorów">
+        <Link to="/uslugi#naprawa-telewizorów">
           <Image
             src={telewizor}
             alt="Serwis telewizorów w Przemyślu"
