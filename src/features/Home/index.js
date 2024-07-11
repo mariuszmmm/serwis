@@ -1,6 +1,5 @@
 import {
   Hero,
-  HeroButton,
   HeroContainer,
   HeroSubText,
   HeroText,
@@ -14,6 +13,7 @@ import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import ReactGA from "react-ga4";
+import { Button } from "../../common/Buttons";
 
 export const Home = () => {
   const scene = {
@@ -223,13 +223,13 @@ export const Home = () => {
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
-        <HeroButton
+        <Button
           href={`tel:${serwis.phone}`}
-          title="tel. +48 790-258-612"
+          // title="tel. +48 790-258-612"
           onClick={handleClick}
         >
           Zadzwoń teraz
-        </HeroButton>
+        </Button>
         <HeroSubText $notShow={isPortrait}>
           {" "}
           <br />

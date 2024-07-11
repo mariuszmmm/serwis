@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
 
 export const Hero = styled.section`
   text-align: center;
@@ -77,41 +76,3 @@ export const HeroSubText = styled.h3`
   font-size: clamp(0.7rem, 2vw, 1.1rem);
 `;
 
-const buttonStyles = css`
-  background-color: ${({ theme }) => theme.color.button};
-  color: ${({ theme }) => theme.color.white};
-  padding: 15px 30px;
-  font-size: clamp(0.7rem, 2vw, 2rem);
-  text-decoration: none;
-  margin: 0 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-weight: 700;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.color.buttonHover};
-  }
-
-  &:active {
-    background-color: ${({ theme }) => theme.color.button};
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    padding: 10px 15px;
-    margin: 0 5px;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    padding: 10px 10px;
-    margin: 0 5px;
-  }
-`;
-
-export const HeroButton = styled.a`
-  ${buttonStyles}
-`;
-
-export const StyledLink = styled(Link)`
-  ${buttonStyles}
-`;

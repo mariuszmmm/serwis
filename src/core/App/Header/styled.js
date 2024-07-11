@@ -19,6 +19,7 @@ export const HeaderContainer = styled.div`
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 0 10px;
@@ -54,9 +55,10 @@ export const StyledNavLink = styled(NavLink)`
   transition: background-color 0.3s ease;
   display: flex;
   border-radius: 5px;
+  min-width: max-content;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    padding: 3px;
+    padding: 5px 3px;
     border-radius: 2px;
   }
 

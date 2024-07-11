@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     color: ${({ theme }) => theme.color.white};
+    letter-spacing: 0.3px;
   };
 `;
 

@@ -22,7 +22,7 @@ export const Footer = () => {
               href={serwis.url.facebook}
               title="Odwiedź naszą stronę na Facebooku"
               aria-label="Facebook strona Serwis RTV i AGD"
-              target="_blank"
+              // target="_blank"
             >
               facebook
               <FacebookIcon />
@@ -33,7 +33,7 @@ export const Footer = () => {
               href={serwis.url.google}
               title="Odwiedź naszą wizytówkę w Google"
               aria-label="Google strona Serwis RTV i AGD"
-              target="_blank"
+              // target="_blank"
             >
               google
               <GoogleIcon />

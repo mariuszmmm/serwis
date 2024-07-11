@@ -6,11 +6,12 @@ import {
   StyledNavLink,
 } from "./styled";
 import { serwis } from "../../../utils/serwis";
+import { Button } from "../../../common/Buttons";
 export const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderContainer>
-        <Logo to="">{serwis.name}</Logo>
+        <Logo to="">Serwis RTV i&nbsp;AGD</Logo>
         <Nav>
           <ul>
             <li>
@@ -33,6 +34,12 @@ export const Header = () => {
             </li>
           </ul>
         </Nav>
+        <Button
+          href={serwis.url.addTestimonial}
+          $opinia
+        >
+          Wystaw opinię
+        </Button>
       </HeaderContainer>
     </HeaderWrapper>
   );
