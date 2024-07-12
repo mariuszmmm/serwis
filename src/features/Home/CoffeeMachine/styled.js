@@ -5,7 +5,6 @@ export const CoffeeMachineWrapper = styled.div`
   top: 240px;
   left: 50%;
   transform: translateX(240px) translateY(-50px);
-  z-index: ${({ $show }) => ($show ? 1 : -1)};
   transition: opacity 1s ease-in-out;
   opacity: ${({ $show }) => ($show ? 1 : 0)};
   ${({ $noDisplay }) =>
