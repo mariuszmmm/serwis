@@ -6,6 +6,10 @@ import {
   SocialIcons,
   FacebookIcon,
   GoogleIcon,
+  PhoneLink,
+  MailLink,
+  FooterInfo,
+  FooterCopy,
 } from "./styled";
 import { serwis } from "../../../utils/serwis";
 
@@ -13,9 +17,17 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContainer>
-        <FooterText>
-          &copy; 2024 {serwis.name}. Wszelkie prawa zastrzeżone.
-        </FooterText>
+        <FooterInfo>
+          <FooterText>
+            telefon:{" "}
+            <PhoneLink href={`tel:${serwis.phone}`}> {serwis.phone}</PhoneLink>
+          </FooterText>
+          <FooterText>
+            e-mail:{" "}
+            <MailLink href={`mailto:${serwis.email}}`}>{serwis.email}</MailLink>
+          </FooterText>
+        </FooterInfo>
+
         <SocialIcons>
           <FooterText>
             <SocialIcon
@@ -38,6 +50,9 @@ export const Footer = () => {
             </SocialIcon>
           </FooterText>
         </SocialIcons>
+        <FooterCopy>
+          &copy; 2024 {serwis.name}. Wszelkie prawa zastrzeżone.
+        </FooterCopy>
       </FooterContainer>
     </FooterWrapper>
   );

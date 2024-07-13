@@ -54,5 +54,5 @@ export const serwis = {
     addTestimonial: "https://g.page/r/Cab4-DhS1Tz8EBM/review",
   },
   email: "piotrek_serwis@wp.pl",
-  phone: "+48 790-258-612",
+  phone: "790-258-612",
 };

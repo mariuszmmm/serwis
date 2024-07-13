@@ -7,7 +7,6 @@ import {
   ServicesSection,
   ServicesTitle,
 } from "./styled";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import { HemletForServices } from "./HemletForServices";
 
 export const Services = () => {

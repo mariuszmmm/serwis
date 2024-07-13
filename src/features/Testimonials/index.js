@@ -5,7 +5,6 @@ import {
   TestimonialsTitle,
 } from "./styled";
 import { serwis } from "../../utils/serwis";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useEffect, useState } from "react";
 import { HemletForTestimonials } from "./HemletForTestimonials";
 
