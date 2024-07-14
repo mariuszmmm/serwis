@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.9ace95c0.js",
+    "main.js": "/static/js/main.6589411b.js",
     "static/js/453.8c8d5fe1.chunk.js": "/static/js/453.8c8d5fe1.chunk.js",
     "static/media/naprawa-ekspresow.png": "/static/media/naprawa-ekspresow.80854c6e539a83b1cfc2.png",
     "static/media/naprawa-pralki.png": "/static/media/naprawa-pralki.be9437890ed6f69c7805.png",
@@ -9,12 +9,14 @@
     "static/media/serwis-telewizorow.png": "/static/media/serwis-telewizorow.0975993ea051a3c35495.png",
     "static/media/serwis.jpg": "/static/media/serwis.fe1b951132b69a0d42f1.jpg",
     "index.html": "/index.html",
-    "static/media/google.svg": "/static/media/google.9e318c9a515f515ca2dd0bb68990eafa.svg",
-    "static/media/facebook.svg": "/static/media/facebook.078932f155a733f131c178393d735fd6.svg",
-    "main.9ace95c0.js.map": "/static/js/main.9ace95c0.js.map",
+    "static/media/address-card.svg": "/static/media/address-card.ad48aab6583f9fa11d0ddf3f75b68fc4.svg",
+    "static/media/phone.svg": "/static/media/phone.d37696f81df68533b4aac94848b6ac53.svg",
+    "static/media/facebook.svg": "/static/media/facebook.4334b10756ac7b81275725bb2a620c59.svg",
+    "static/media/envelope.svg": "/static/media/envelope.ab11e705408a27da262bcf133e6d101c.svg",
+    "main.6589411b.js.map": "/static/js/main.6589411b.js.map",
     "453.8c8d5fe1.chunk.js.map": "/static/js/453.8c8d5fe1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.9ace95c0.js"
+    "static/js/main.6589411b.js"
   ]
 }
