@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { ReactComponent as facebookIcon } from "../../../assets/images/facebook.svg";
-import { ReactComponent as googleIcon } from "../../../assets/images/google.svg";
+import { ReactComponent as facebookIcon } from "./icons/facebook.svg";
+import { ReactComponent as envelopeIcon } from "./icons/envelope.svg";
+import { ReactComponent as phoneIcon } from "./icons/phone.svg";
+import { ReactComponent as googleIcon } from "./icons/address-card.svg";
 
 export const FooterWrapper = styled.footer`
   background-color: ${({ theme }) => theme.color.primary};
@@ -13,90 +15,60 @@ export const FooterWrapper = styled.footer`
 `;
 
 export const FooterContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
   max-width: 1500px;
   margin: 10px auto 0;
-  padding: 0 15px;
+  padding: 0 100px;
   height: 100%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    align-items: flex-start;
+  }
 `;
 
 export const FooterInfo = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   width: fit-content;
-  text-align: left;
-  gap: 5px;
+  gap: 10px clamp(10px, 5.9vw, 200px);
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    grid-template-columns: auto;
+  }
 `;
 
-export const FooterText = styled.p`
+export const FooterText = styled.span`
   margin: 0;
-  font-size: clamp(0.3rem, 1.9vw, 0.7rem);
+  font-size: clamp(0.4rem, 1.9vw, 0.8rem);
   font-weight: 200;
+  width: max-content;
 `;
 
 export const FooterCopy = styled.p`
   margin: 10px 0 3px;
   font-size: clamp(0.2rem, 1.9vw, 0.6rem);
   font-weight: 200;
-  grid-column: 1 / 3;
-`;
-
-export const SocialIcons = styled.div`
-  padding-left: clamp(10px, 2.5vw, 50px);
-  display: flex;
-  gap: clamp(5px, 2.5vw, 15px);
-  margin: 0;
-  text-align: left;
-  justify-self: right;
-`;
-
-export const SocialIcon = styled.a`
-  display: flex;
-  align-items: center;
-  height: 100%;
-  text-decoration: none;
-  gap: 5px;
-  color: ${({ theme }) => theme.color.white};
-  transition: color 0.3s ease, transform 0.05s ease;
-
-  &:hover {
-    color: ${({ theme }) => theme.color.button};
-  }
-
-  &:active {
-    color: ${({ theme }) => theme.color.white};
-  }
+  width: max-content;
+  align-self: center;
 `;
 
 const styledIcon = (icon) => styled(icon)`
-  width: 3vh;
-  height: 3vh;
-  border-radius: 50%;
-  color: ${({ theme }) => theme.color.white};
-  color: inherit;
+  width: 2vw;
+  height: 2vw;
 `;
 
+export const EmailIcon = styledIcon(envelopeIcon);
+export const PhoneIcon = styledIcon(phoneIcon);
 export const FacebookIcon = styledIcon(facebookIcon);
 export const GoogleIcon = styledIcon(googleIcon);
 
-export const MailLink = styled.a`
-  color: ${({ theme }) => theme.color.white};
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: ${({ theme }) => theme.color.button};
-  }
-
-  &:active {
-    color: ${({ theme }) => theme.color.white};
-  }
-`;
-
-export const PhoneLink = styled.a`
+export const StyledLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   transition: color 0.3s ease;
