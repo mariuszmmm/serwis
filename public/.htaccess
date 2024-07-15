@@ -6,9 +6,16 @@
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Przekierowanie WWW do bez WWW (jeśli preferujesz bez WWW)
+  # Przekierowanie WWW do bez WWW
   RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-  RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+  RewriteRule ^(.*)$ https://naprawaprzemysl.pl/$1 [L,R=301]
+
+  # Przekierowania ze starych URL-i na nowe URL-e
+  RewriteRule ^uslugi$ https://naprawaprzemysl.pl/uslugi [L,R=301]
+  RewriteRule ^opinie$ https://naprawaprzemysl.pl/opinie [L,R=301]
+  RewriteRule ^cennik$ https://naprawaprzemysl.pl/cennik [L,R=301]
+  RewriteRule ^kontakt$ https://naprawaprzemysl.pl/kontakt [L,R=301]
+  RewriteRule ^o-nas$ https://naprawaprzemysl.pl/o-mnie [L,R=301]
 
   # Przekierowanie wszystkich żądań do index.html (SPA)
   RewriteCond %{REQUEST_FILENAME} !-f

@@ -3,7 +3,6 @@ import {
   Routes,
   Route,
   Navigate,
-  useLocation,
 } from "react-router-dom";
 import { Header } from "./Header";
 import { About } from "../../features/About";
@@ -15,43 +14,23 @@ import { Contact } from "../../features/Contact";
 import { Footer } from "./Footer";
 import { Background } from "./Background";
 import ScrollToTop from "./ScrollToTop";
-import { useEffect } from "react";
-import { initGA, logPageView } from "./analytics";
 
-const App = () => {
-  useEffect(() => {
-    initGA();
-    logPageView();
-  }, []);
-
-  const location = useLocation();
-  useEffect(() => {
-    logPageView();
-  }, [location]);
-
-  return (
-    <>
-      <ScrollToTop />
-      <Background />
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/o-mnie" element={<About />} />
-        <Route path="/uslugi" element={<Services />} />
-        <Route path="/cennik" element={<Pricing />} />
-        <Route path="/opinie" element={<Testimonials />} />
-        <Route path="/kontakt" element={<Contact />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
-      <Footer />
-    </>
-  );
-};
-
-const AppWrapper = () => (
+const App = () => (
   <Router>
-    <App />
+    <ScrollToTop />
+    <Background />
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/o-mnie" element={<About />} />
+      <Route path="/uslugi" element={<Services />} />
+      <Route path="/cennik" element={<Pricing />} />
+      <Route path="/opinie" element={<Testimonials />} />
+      <Route path="/kontakt" element={<Contact />} />
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
+    <Footer />
   </Router>
 );
 
-export default AppWrapper;
+export default App;

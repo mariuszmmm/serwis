@@ -11,7 +11,6 @@ import { WashingMachine } from "./WashingMachine";
 import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
-import ReactGA from "react-ga4";
 import { Button } from "../../common/Buttons";
 import { HelmetForHome } from "./HemletForHome";
 import { mobileScene, scene } from "./scenes";
@@ -72,13 +71,6 @@ export const Home = () => {
     setShow(true);
   }, []);
 
-  const handleClick = () => {
-    ReactGA.event({
-      category: "User",
-      action: "Clicked on button",
-    });
-  };
-
   return (
     <Hero $show={show}>
       <HelmetForHome />
@@ -91,9 +83,7 @@ export const Home = () => {
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
-        <Button href={`tel:${serwis.phone}`} onClick={handleClick}>
-          Zadzwoń teraz
-        </Button>
+        <Button href={`tel:${serwis.phone}`}>Zadzwoń teraz</Button>
         <HeroSubText $notShow={isPortrait}>
           {" "}
           <br />
