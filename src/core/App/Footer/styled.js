@@ -21,10 +21,10 @@ export const FooterContainer = styled.div`
   gap: 30px;
   max-width: 1500px;
   margin: 10px auto 0;
-  padding: 0 100px;
+  padding: 0 20px;
   height: 100%;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     align-items: flex-start;
   }
 `;
@@ -32,19 +32,22 @@ export const FooterContainer = styled.div`
 export const FooterInfo = styled.div`
   display: grid;
   grid-template-columns: repeat(4, auto);
-  width: fit-content;
+  align-content: center;
+  width: 100%;
+  padding: 0 50px ;
   gap: 10px clamp(10px, 5.9vw, 200px);
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     grid-template-columns: auto;
   }
 `;
 
 export const FooterText = styled.span`
   margin: 0;
-  font-size: clamp(0.4rem, 1.9vw, 0.8rem);
+  font-size: clamp(0.4rem, 1.9vw, 1rem);
   font-weight: 200;
   width: max-content;
+  
 `;
 
 export const FooterCopy = styled.p`
@@ -68,10 +71,16 @@ export const GoogleIcon = styledIcon(googleIcon);
 export const StyledLink = styled.a`
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-self: center;
+  gap: clamp(5px, 5.5vw, 10px);
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   transition: color 0.2s ease;
+
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    justify-self: left;
+  }
 
   &:hover {
     color: ${({ theme }) => theme.color.button};

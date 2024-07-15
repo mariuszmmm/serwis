@@ -43,7 +43,7 @@ export const Button = styled.a`
       bottom: 0;
       right: 31px;
       padding: 8px 15px;
-      transform: translate(0, calc(100% + 20px));
+      transform: translate(0, calc(100% + 30px));
       font-size: clamp(0.3rem, 1.6vw, 0.9rem);
       font-weight: 400;
 
