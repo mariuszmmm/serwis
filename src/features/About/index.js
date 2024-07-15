@@ -34,7 +34,7 @@ export const About = () => {
             do&nbsp;kawy będzie działać jak&nbsp;nowy!
           </AboutText>
           <LazyLoad>
-            <TeamImage src={team} alt="serwis" />
+            <TeamImage src={team} alt="serwis" loading="lazy" />
           </LazyLoad>
         </main>
       </AboutContainer>

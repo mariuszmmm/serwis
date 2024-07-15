@@ -18,7 +18,7 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
   max-width: 1500px;
   margin: 10px auto 0;
   padding: 0 20px;
@@ -34,7 +34,7 @@ export const FooterInfo = styled.div`
   grid-template-columns: repeat(4, auto);
   align-content: center;
   width: 100%;
-  padding: 0 50px ;
+  padding: 0 50px;
   gap: 10px clamp(10px, 5.9vw, 200px);
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
@@ -47,12 +47,12 @@ export const FooterText = styled.span`
   font-size: clamp(0.4rem, 1.9vw, 1rem);
   font-weight: 200;
   width: max-content;
-  
 `;
 
 export const FooterCopy = styled.p`
   margin: 10px 0 3px;
   font-size: clamp(0.2rem, 1.9vw, 0.6rem);
+  color: ${({ theme }) => theme.color.border};
   font-weight: 200;
   width: max-content;
   align-self: center;
@@ -77,7 +77,6 @@ export const StyledLink = styled.a`
   text-decoration: none;
   transition: color 0.2s ease;
 
-  
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     justify-self: left;
   }

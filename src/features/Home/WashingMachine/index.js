@@ -18,6 +18,7 @@ export const WashingMachine = ({ show, center, reset, setHold }) => {
             alt="Naprawa pralek w Przemyślu"
             $center={center}
             $show={show}
+            loading="lazy"
           />
         </Link>
       </LazyLoad>

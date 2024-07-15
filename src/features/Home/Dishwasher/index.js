@@ -18,6 +18,7 @@ export const Dishwasher = ({ show, center, reset, setHold }) => {
             src={zmywarka}
             alt="Serwis zmywarek w Przemyślu"
             $center={center}
+            loading="lazy"
           />
         </Link>
       </LazyLoad>

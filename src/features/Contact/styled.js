@@ -5,7 +5,8 @@ export const ContactSection = styled.section`
   justify-content: center;
   padding: 100px 0 0;
   text-align: left;
-  min-height: 100vh;  opacity: 0;
+  min-height: calc(100vh - 5vh);
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
   ${({ $show }) =>
     $show &&
@@ -49,12 +50,8 @@ export const PhoneLink = styled.a`
 `;
 
 export const Iframe = styled.iframe`
-  margin-top: 20px;
-  width: 600px;
-  height: 450px;
-  border: none;
-  max-width: 90vw;
-  margin: 30px 15px;
+ width: 100%;
+ height: 100%;
 `;
 
 export const ImageContainer = styled.div`

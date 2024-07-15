@@ -17,6 +17,7 @@ export const Television = ({ show, center, reset, setHold }) => {
             src={telewizor}
             alt="Serwis telewizorów w Przemyślu"
             $center={center}
+            loading="lazy"
           />
         </Link>
       </LazyLoad>

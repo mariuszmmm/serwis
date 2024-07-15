@@ -17,6 +17,7 @@ export const CoffeeMachine = ({ show, center, reset, setHold }) => {
             src={ekspres}
             alt="Naprawa ekspresów do kawy w Przemyślu"
             $center={center}
+            loading="lazy"
           />
         </Link>
       </LazyLoad>
