@@ -26,6 +26,7 @@ export const Home = () => {
     content: isPortrait ? mobileScene[0] : scene[0],
   });
   const [show, setShow] = useState(false);
+  const [hold, setHold] = useState(false);
 
   const handleResize = () => {
     const actualState = window.innerHeight > window.innerWidth;
@@ -49,6 +50,7 @@ export const Home = () => {
   }, [window.innerHeight, window.innerWidth]);
 
   useEffect(() => {
+    if (hold) return;
     let sceneNumber = activeScene.number >= 8 ? 1 : activeScene.number + 1;
     let isTransition = sceneNumber % 2 === 0 ? true : false;
     const interval = setInterval(
@@ -59,12 +61,12 @@ export const Home = () => {
           content: isPortrait ? mobileScene[sceneNumber] : scene[sceneNumber],
         });
       },
-      isTransition ? 5000 : 1500
+      isTransition ? 3000 : 600
     );
 
     return () => clearInterval(interval);
     // eslint-disable-next-line
-  }, [activeScene]);
+  }, [activeScene, hold]);
 
   useEffect(() => {
     setShow(true);
@@ -82,8 +84,8 @@ export const Home = () => {
       <HelmetForHome />
       <HeroContainer>
         <HeroTitle>
-          Profesjonalna naprawa pralek, zmywarek,
-          <br /> telewizorów
+          Profesjonalna naprawa
+          <br /> pralek, zmywarek, telewizorów
           <br /> i&nbsp;ekspresów do&nbsp;kawy
           <br />
           w&nbsp;Przemyślu
@@ -106,21 +108,25 @@ export const Home = () => {
         show={activeScene.content[0]}
         center={isPortrait}
         reset={activeScene.reset}
+        setHold={setHold}
       />
       <CoffeeMachine
         show={activeScene.content[1]}
         center={isPortrait}
         reset={activeScene.reset}
+        setHold={setHold}
       />
       <Dishwasher
         show={activeScene.content[2]}
         center={isPortrait}
         reset={activeScene.reset}
+        setHold={setHold}
       />
       <Television
         show={activeScene.content[3]}
         center={isPortrait}
         reset={activeScene.reset}
+        setHold={setHold}
       />
       {/* <WashingMachine show={true} center={isPortrait} />
       <CoffeeMachine show={true} center={isPortrait} />

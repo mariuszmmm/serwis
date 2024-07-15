@@ -31,18 +31,3 @@ export const Textarea = styled.textarea`
   border: 1px solid ${({ theme }) => theme.color.border};
   height: 150px;
 `;
-
-export const Button = styled.button`
-  background-color: ${({ theme }) => theme.color.button};
-  color: ${({ theme }) => theme.color.white};
-  padding: 15px 30px;
-  font-size: clamp(0.5rem, 2.5vw, 1rem);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.color.buttonHover};
-  }
-`;

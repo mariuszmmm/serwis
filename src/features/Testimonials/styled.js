@@ -4,8 +4,7 @@ export const TestimonialsSection = styled.section`
   padding: 100px 0;
   text-align: center;
   opacity: 0;
-  min-height: calc(100vh - 5vh);
-  transition: opacity 0.5s ease-in-out;
+  min-height: 100vh;  transition: opacity 0.5s ease-in-out;
   ${({ $show }) =>
     $show &&
     css`

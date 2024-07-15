@@ -4,7 +4,7 @@ export const TelevisionWrapper = styled.div`
   position: absolute;
   top: 220px;
   left: 50%;
-  transform: translateX(-1070px) translateY(-70px);
+  transform: translateX(-1050px) translateY(70px);
   transition: opacity 1s ease-in-out;
   opacity: ${({ $show }) => ($show ? 1 : 0)};
   ${({ $noDisplay }) =>
@@ -13,11 +13,17 @@ export const TelevisionWrapper = styled.div`
       display: none;
     `}
 
+    ${({ $show }) =>
+    !$show &&
+    css`
+      z-index: -1;
+    `}
+
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-880px) translateY(-200px) scale(60%);
+        transform: translateX(-880px) translateY(-100px) scale(60%);
       `}
   }
 
@@ -25,7 +31,7 @@ export const TelevisionWrapper = styled.div`
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-740px) translateY(-340px) scale(30%);
+        transform: translateX(-740px) translateY(-240px) scale(35%);
       `}
   }
 
@@ -33,7 +39,7 @@ export const TelevisionWrapper = styled.div`
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-680px) translateY(-360px) scale(25%);
+        transform: translateX(-680px) translateY(-260px) scale(25%);
       `}
   }
 
@@ -41,20 +47,27 @@ export const TelevisionWrapper = styled.div`
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-630px) translateY(-390px) scale(20%);
+        transform: translateX(-630px) translateY(-290px) scale(20%);
       `}
   }
 
   @media (orientation: portrait) {
     top: clamp(420px, 45vw, 550px);
+    top: clamp(320px, 29vw, 450px);
+
     transform: translateX(-50%) translateY(130px) scale(50%);
 
+    @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+      transform: translateX(-50%) translateY(100px) scale(40%);
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-      transform: translateX(-50%) translateY(-40px) scale(40%);
+      transform: translateX(-50%) translateY(10px) scale(40%);
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
       transform: translateX(-50%) translateY(0) scale(40%);
+      top: 330px;
     }
   }
 `;
@@ -63,10 +76,11 @@ export const Image = styled.img`
   transform: scale(60%);
   filter: drop-shadow(10px 10px 15px rgba(40, 40, 40, 0.7))
     drop-shadow(0px 20px 30px rgba(40, 40, 40, 0.4));
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 
   &:hover {
     transform: scale(63%);
+    filter: drop-shadow(10px 10px 15px rgba(255, 140, 0, 0.7));
   }
 
   @media (orientation: portrait) {

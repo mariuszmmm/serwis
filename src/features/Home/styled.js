@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 
 export const Hero = styled.section`
   text-align: center;
-  padding: 12vh 0 9vh;
-  min-height: calc(100vh - 5vh);
+  padding: 100px 0 9vh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   opacity: 0;
@@ -15,26 +15,43 @@ export const Hero = styled.section`
     `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    padding: 12vh 0 6vh;
+    padding: 100px 0 6vh;
   }
 `;
 
 export const HeroContainer = styled.header`
   max-width: 1200px;
-  min-height: 600px;
+  min-height: 800px;
   margin: 0 auto;
   padding: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
-    min-height: 350px;
+    min-height: 500px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
-    min-height: 150px;
+    min-height: 450px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    min-height: 350px;
     padding: 10px;
+  }
+
+  @media (orientation: portrait) {
+    min-height: 1100px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+      min-height: 850px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+      min-height: 730px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+      min-height: 630px;
+    }
   }
 `;
 
@@ -48,14 +65,14 @@ export const HeroTitle = styled.h1`
   }
 
   @media (orientation: portrait) {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 `;
 
 const textStyled = css`
   opacity: ${({ $notShow }) => ($notShow ? 0 : 1)};
   margin-bottom: 50px;
-  font-size: clamp(0.8rem, 2.5vw, 1.4rem);
+  font-size: clamp(0.8rem, 2.3vw, 1.3rem);
   line-height: 1.5;
   font-weight: 400;
 
@@ -73,6 +90,5 @@ export const HeroText = styled.h2`
 
 export const HeroSubText = styled.h3`
   ${textStyled}
-  font-size: clamp(0.7rem, 2vw, 1.1rem);
+  font-size: clamp(0.6rem, 1.8vw, 1.1rem);
 `;
-

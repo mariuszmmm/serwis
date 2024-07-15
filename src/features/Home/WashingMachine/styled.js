@@ -4,7 +4,7 @@ export const WashingMachineWrapper = styled.div`
   position: absolute;
   top: 220px;
   left: 50%;
-  transform: translateX(-870px) translateY(-40px);
+  transform: translateX(-870px) translateY(60px);
   transition: opacity 1s ease-in-out;
   opacity: ${({ $show }) => ($show ? 1 : 0)};
   ${({ $noDisplay }) =>
@@ -13,11 +13,17 @@ export const WashingMachineWrapper = styled.div`
       display: none;
     `}
 
+    ${({ $show }) =>
+    !$show &&
+    css`
+      z-index: -1;
+    `}
+
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-700px) translateY(-190px) scale(60%);
+        transform: translateX(-700px) translateY(-100px) scale(60%);
       `}
   }
 
@@ -25,7 +31,7 @@ export const WashingMachineWrapper = styled.div`
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-560px) translateY(-330px) scale(30%);
+        transform: translateX(-570px) translateY(-230px) scale(40%);
       `}
   }
 
@@ -33,7 +39,7 @@ export const WashingMachineWrapper = styled.div`
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-520px) translateY(-360px) scale(30%);
+        transform: translateX(-520px) translateY(-260px) scale(30%);
       `}
   }
 
@@ -41,20 +47,25 @@ export const WashingMachineWrapper = styled.div`
     ${({ $center }) =>
       !$center &&
       css`
-        transform: translateX(-470px) translateY(-390px) scale(20%);
+        transform: translateX(-470px) translateY(-290px) scale(20%);
       `}
   }
 
   @media (orientation: portrait) {
-    top: clamp(400px, 45vw, 550px);
+    top: clamp(250px, 29vw, 450px);
     transform: translateX(-50%) translateY(170px) scale(50%);
 
+    @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+      transform: translateX(-50%) translateY(100px) scale(40%);
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-      transform: translateX(-50%) translateY(-60px) scale(40%);
+      transform: translateX(-50%) translateY(10px) scale(30%);
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-      transform: translateX(-50%) translateY(0) scale(40%);
+      transform: translateX(-50%) translateY(0) scale(30%);
+      top: 300px;
     }
   }
 `;
@@ -63,10 +74,11 @@ export const Image = styled.img`
   transform: scale(70%);
   filter: drop-shadow(10px 10px 15px rgba(40, 40, 40, 0.7))
     drop-shadow(0px 20px 30px rgba(40, 40, 40, 0.4));
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 
   &:hover {
     transform: scale(73%);
+    filter: drop-shadow(10px 10px 15px rgba(255, 140, 0, 0.7));
   }
 
   @media (orientation: portrait) {

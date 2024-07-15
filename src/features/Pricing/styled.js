@@ -3,8 +3,7 @@ import styled, { css } from "styled-components";
 export const PricingSection = styled.section`
   padding: 100px 0;
   text-align: center;
-  min-height: calc(100vh - 5vh);
-  opacity: 0;
+  min-height: 100vh;  opacity: 0;
   transition: opacity 0.5s ease-in-out;
   ${({ $show }) =>
     $show &&

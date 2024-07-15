@@ -71,7 +71,7 @@ export const StyledLink = styled.a`
   gap: 5px;
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 
   &:hover {
     color: ${({ theme }) => theme.color.button};

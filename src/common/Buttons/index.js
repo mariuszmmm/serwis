@@ -7,14 +7,16 @@ const buttonStyles = css`
   padding: 15px 30px;
   font-size: clamp(0.7rem, 2vw, 2rem);
   text-decoration: none;
+  border: 2px solid transparent;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-weight: 700;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  font-weight: 600;
   min-width: max-content;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.buttonHover};
+    border: 2px solid ${({ theme }) => theme.color.white};
   }
 
   &:active {
