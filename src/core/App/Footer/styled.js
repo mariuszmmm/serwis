@@ -38,13 +38,14 @@ export const FooterInfo = styled.div`
   gap: 10px clamp(10px, 5.9vw, 200px);
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, auto);
+    padding: 0 200px 0 20px;
   }
 `;
 
 export const FooterText = styled.span`
   margin: 0;
-  font-size: clamp(0.4rem, 1.9vw, 1rem);
+  font-size: clamp(0.3rem, 1.6vw, 0.9rem);
   font-weight: 200;
   width: max-content;
 `;

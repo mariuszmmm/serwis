@@ -11,7 +11,7 @@ import { WashingMachine } from "./WashingMachine";
 import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
-import { Button } from "../../common/Buttons";
+import { StyledLink } from "../../common/Buttons";
 import { HelmetForHome } from "./HemletForHome";
 import { mobileScene, scene } from "./scenes";
 
@@ -83,7 +83,7 @@ export const Home = () => {
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
-        <Button href={`tel:${serwis.phone}`}>Zadzwoń teraz</Button>
+        <StyledLink href={`tel:${serwis.phone}`}>Zadzwoń teraz</StyledLink>
         <HeroSubText $notShow={isPortrait}>
           {" "}
           <br />

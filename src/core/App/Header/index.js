@@ -6,7 +6,7 @@ import {
   StyledNavLink,
 } from "./styled";
 import { serwis } from "../../../utils/serwis";
-import { Button } from "../../../common/Buttons";
+import { StyledLink } from "../../../common/Buttons";
 export const Header = () => {
   return (
     <HeaderWrapper>
@@ -34,12 +34,9 @@ export const Header = () => {
             </li>
           </ul>
         </Nav>
-        <Button
-          href={serwis.url.addTestimonial}
-          $opinia
-        >
+        <StyledLink href={serwis.url.addTestimonial} $opinia>
           Wystaw opinię
-        </Button>
+        </StyledLink>
       </HeaderContainer>
     </HeaderWrapper>
   );

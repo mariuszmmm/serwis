@@ -14,7 +14,6 @@ export const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     const templateParams = {
       from_name: name,
       from_email: email,

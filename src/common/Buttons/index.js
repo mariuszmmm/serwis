@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
-const buttonStyles = css`
+export const Button = styled.button`
   background-color: ${({ theme }) => theme.color.button};
   color: ${({ theme }) => theme.color.white};
   padding: 15px 30px;
@@ -34,8 +33,7 @@ const buttonStyles = css`
   }
 `;
 
-export const Button = styled.a`
-  ${buttonStyles}
+export const StyledLink = styled(Button).attrs({ as: "a" })`
   ${({ $opinia }) =>
     $opinia &&
     css`
@@ -53,8 +51,4 @@ export const Button = styled.a`
         padding: 5px 10px;
       }
     `}
-`;
-
-export const StyledLink = styled(Link)`
-  ${buttonStyles}
 `;
