@@ -24,7 +24,7 @@ export const Home = () => {
     number: 0,
     content: isPortrait ? mobileScene[0] : scene[0],
   });
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [hold, setHold] = useState(false);
 
   const handleResize = () => {
@@ -38,38 +38,38 @@ export const Home = () => {
     });
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
 
-    // eslint-disable-next-line
-  }, [window.innerHeight, window.innerWidth]);
+  //   // eslint-disable-next-line
+  // }, [window.innerHeight, window.innerWidth]);
 
-  useEffect(() => {
-    if (hold) return;
-    let sceneNumber = activeScene.number >= 8 ? 1 : activeScene.number + 1;
-    let isTransition = sceneNumber % 2 === 0 ? true : false;
-    const interval = setInterval(
-      () => {
-        setActiveScene({
-          reset: false,
-          number: sceneNumber,
-          content: isPortrait ? mobileScene[sceneNumber] : scene[sceneNumber],
-        });
-      },
-      isTransition ? 3000 : 600
-    );
+  // useEffect(() => {
+  //   if (hold) return;
+  //   let sceneNumber = activeScene.number >= 8 ? 1 : activeScene.number + 1;
+  //   let isTransition = sceneNumber % 2 === 0 ? true : false;
+  //   const interval = setInterval(
+  //     () => {
+  //       setActiveScene({
+  //         reset: false,
+  //         number: sceneNumber,
+  //         content: isPortrait ? mobileScene[sceneNumber] : scene[sceneNumber],
+  //       });
+  //     },
+  //     isTransition ? 3000 : 600
+  //   );
 
-    return () => clearInterval(interval);
-    // eslint-disable-next-line
-  }, [activeScene, hold]);
+  //   return () => clearInterval(interval);
+  //   // eslint-disable-next-line
+  // }, [activeScene, hold]);
 
-  useEffect(() => {
-    setShow(true);
-  }, []);
+  // useEffect(() => {
+  //   setShow(true);
+  // }, []);
 
   return (
     <Hero $show={show}>
