@@ -1,4 +1,4 @@
-import LazyLoad from "react-lazyload";
+// import LazyLoad from "react-lazyload";
 import zmywarka from "../../../assets/images/serwis-zmywarek.png";
 import { DishwasherWrapper, Image } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
@@ -12,16 +12,16 @@ export const Dishwasher = ({ show, center, reset, setHold }) => {
       onMouseLeave={() => setHold(false)}
     >
       {" "}
-      <LazyLoad>
+      {/* <LazyLoad> */}
         <Link to="/uslugi#naprawa-zmywarek">
           <Image
             src={zmywarka}
             alt="Serwis zmywarek w Przemyślu"
             $center={center}
-            loading="lazy"
+            // loading="lazy"
           />
         </Link>
-      </LazyLoad>
+      {/* </LazyLoad> */}
     </DishwasherWrapper>
   );
 };

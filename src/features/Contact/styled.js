@@ -49,11 +49,6 @@ export const PhoneLink = styled.a`
   text-decoration: none;
 `;
 
-export const Iframe = styled.iframe`
- width: 100%;
- height: 100%;
-`;
-
 export const ImageContainer = styled.div`
   width: 600px;
   max-width: 90vw;

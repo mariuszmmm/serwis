@@ -1,4 +1,4 @@
-import LazyLoad from "react-lazyload";
+// import LazyLoad from "react-lazyload";
 import pralka from "../../../assets/images/naprawa-pralki.png";
 import { Image, WashingMachineWrapper } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
@@ -11,17 +11,17 @@ export const WashingMachine = ({ show, center, reset, setHold }) => {
       onMouseEnter={() => setHold(true)}
       onMouseLeave={() => setHold(false)}
     >
-      <LazyLoad>
+      {/* <LazyLoad> */}
         <Link to="/uslugi#naprawa-pralek">
           <Image
             src={pralka}
             alt="Naprawa pralek w Przemyślu"
             $center={center}
             $show={show}
-            loading="lazy"
+            // loading="lazy"
           />
         </Link>
-      </LazyLoad>
+      {/* </LazyLoad> */}
     </WashingMachineWrapper>
   );
 };
