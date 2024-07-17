@@ -13,12 +13,12 @@ export const CoffeeMachine = ({ show, center, reset, setHold }) => {
     >
       {/* <LazyLoad> */}
         <Link to="/uslugi#naprawa-ekspresów">
-          <Image
+          {/* <Image
             src={ekspres}
             alt="Naprawa ekspresów do kawy w Przemyślu"
             $center={center}
             // loading="lazy"
-          />
+          /> */}
         </Link>
       {/* </LazyLoad> */}
     </CoffeeMachineWrapper>

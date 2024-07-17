@@ -14,12 +14,12 @@ export const Dishwasher = ({ show, center, reset, setHold }) => {
       {" "}
       {/* <LazyLoad> */}
         <Link to="/uslugi#naprawa-zmywarek">
-          <Image
+          {/* <Image
             src={zmywarka}
             alt="Serwis zmywarek w Przemyślu"
             $center={center}
             // loading="lazy"
-          />
+          /> */}
         </Link>
       {/* </LazyLoad> */}
     </DishwasherWrapper>

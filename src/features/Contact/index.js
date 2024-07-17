@@ -47,11 +47,11 @@ export const Contact = () => {
           <ContactText>
             w godzinach <span>9.30-17.00</span>
           </ContactText>
-          <ImageContainer>
+          {/* <ImageContainer>
             <Suspense fallback={<div>Ładowanie...</div>}>
               <Iframe />
             </Suspense>
-          </ImageContainer>
+          </ImageContainer> */}
         </ContactInfo>
       </ContactContainer>
     </ContactSection>

@@ -13,13 +13,13 @@ export const WashingMachine = ({ show, center, reset, setHold }) => {
     >
       {/* <LazyLoad> */}
         <Link to="/uslugi#naprawa-pralek">
-          <Image
+          {/* <Image
             src={pralka}
             alt="Naprawa pralek w Przemyślu"
             $center={center}
             $show={show}
             // loading="lazy"
-          />
+          /> */}
         </Link>
       {/* </LazyLoad> */}
     </WashingMachineWrapper>

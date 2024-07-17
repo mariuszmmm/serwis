@@ -18,7 +18,7 @@ import ScrollToTop from "./ScrollToTop";
 const App = () => (
   <Router>
     <ScrollToTop />
-    <Background />
+    {/* <Background /> */}
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
