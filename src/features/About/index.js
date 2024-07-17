@@ -1,7 +1,6 @@
 import { AboutContainer, AboutSection, AboutText, AboutTitle } from "./styled";
 import { TeamImage } from "../../common/TeamImage";
 import team from "../../assets/images/serwis.jpg";
-// import LazyLoad from "react-lazyload";
 import { useEffect, useState } from "react";
 import { HelmetForAbout } from "./HelmetForAbout";
 
@@ -33,9 +32,7 @@ export const About = () => {
             usług&nbsp;–&nbsp;gwarantuję, że&nbsp;Twoja pralka lub&nbsp;ekspres
             do&nbsp;kawy będzie działać jak&nbsp;nowy!
           </AboutText>
-          {/* <LazyLoad> */}
-            {/* <TeamImage src={team} alt="serwis"  /> */}
-          {/* </LazyLoad> */}
+          <TeamImage src={team} alt="serwis" />
         </main>
       </AboutContainer>
     </AboutSection>
