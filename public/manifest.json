@@ -1,9 +1,7 @@
 {
   "short_name": "Serwis RTV i AGD",
   "name": "Naprawa RTV i AGD - Przemyśl",
-  "icons": [
-
-  ],
+  "icons": [],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

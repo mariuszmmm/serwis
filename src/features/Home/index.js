@@ -13,7 +13,7 @@ import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
 import { StyledLink } from "../../common/Buttons";
 import { HelmetForHome } from "./HemletForHome";
-import { mobileScene, scene } from "./scenes";
+import { mobileScene, sceneB as scene } from "./scenes";
 
 export const Home = () => {
   const [isPortrait, setIsPortrait] = useState(
@@ -60,7 +60,7 @@ export const Home = () => {
           content: isPortrait ? mobileScene[sceneNumber] : scene[sceneNumber],
         });
       },
-      isTransition ? 3000 : 600
+      isTransition ? 3000 : 800
     );
 
     return () => clearInterval(interval);
