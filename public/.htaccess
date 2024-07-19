@@ -2,16 +2,31 @@
   RewriteEngine On
   RewriteBase /
 
-  # Przekierowanie HTTP do HTTPS
-  RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+ # Cache po stronie przeglądarki
+<FilesMatch "\.(jpg|jpeg|png|gif|svg|css|js)$">
+    Header set Cache-Control "max-age=2592000"
+</FilesMatch>
 
-  # Przekierowanie WWW do bez WWW
-  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-  RewriteRule ^(.*)$ https://naprawaprzemysl.pl/$1 [L,R=301]
+# Kompresja
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE image/svg+xml
 
-  # Przekierowania ze starych URL-i na nowe URL-e
-  RewriteRule ^o-nas$ https://naprawaprzemysl.pl/o-mnie [L,R=301]
+# Przekierowanie HTTP do HTTPS oraz z www do bez www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.naprawaprzemysl\.pl$ [NC]
+RewriteRule ^(.*)$ https://naprawaprzemysl.pl/$1 [R=301,L]
+
+# Przekierowanie 301 dla konkretnych stron
+RewriteRule ^o-nas$ /o-mnie [R=301,L]
 
   # Przekierowanie wszystkich żądań do index.html (SPA)
   RewriteCond %{REQUEST_FILENAME} !-f
