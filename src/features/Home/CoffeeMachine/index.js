@@ -1,4 +1,4 @@
-import ekspres from "../../../assets/images/naprawa-ekspresow.png";
+import ekspres from "../../../assets/images/naprawa-ekspresow.webp";
 import { CoffeeMachineWrapper, Image } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
 export const CoffeeMachine = ({ show, center, reset, setHold }) => {

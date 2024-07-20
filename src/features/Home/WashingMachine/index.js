@@ -1,4 +1,4 @@
-import pralka from "../../../assets/images/naprawa-pralki.png";
+import pralka from "../../../assets/images/naprawa-pralki.webp";
 import { Image, WashingMachineWrapper } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
 export const WashingMachine = ({ show, center, reset, setHold }) => {

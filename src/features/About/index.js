@@ -1,6 +1,6 @@
 import { AboutContainer, AboutSection, AboutText, AboutTitle } from "./styled";
 import { TeamImage } from "../../common/TeamImage";
-import team from "../../assets/images/serwis.jpg";
+import team from "../../assets/images/serwis.webp";
 import { useEffect, useState } from "react";
 import { HelmetForAbout } from "./HelmetForAbout";
 

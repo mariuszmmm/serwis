@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderContainer>
-        <Logo to="">Serwis RTV i&nbsp;AGD</Logo>
+        <Logo to="/">Serwis RTV i&nbsp;AGD</Logo>
         <Nav>
           <ul>
             <li>

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const Button = styled.button`
   background-color: ${({ theme }) => theme.color.button};
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.black};
   padding: 15px 30px;
   font-size: clamp(0.7rem, 2vw, 2rem);
   text-decoration: none;
@@ -43,7 +43,7 @@ export const StyledLink = styled(Button).attrs({ as: "a" })`
       padding: 8px 15px;
       transform: translate(0, calc(100% + 30px));
       font-size: clamp(0.3rem, 1.6vw, 0.9rem);
-      font-weight: 400;
+      font-weight: 600;
 
       @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
         right: 13px;

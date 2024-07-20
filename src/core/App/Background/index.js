@@ -1,5 +1,5 @@
 import { BackgroundWrapper, Circle, Image, Rotating } from "./styled.js";
-import serwis from "../../../assets/images/serwis.jpg";
+import serwis from "../../../assets/images/serwis.webp";
 
 export const Background = () => {
   return (

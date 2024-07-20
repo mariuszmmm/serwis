@@ -1,4 +1,4 @@
-import telewizor from "../../../assets/images/serwis-telewizorow.png";
+import telewizor from "../../../assets/images/serwis-telewizorow.webp";
 import { Image, TelevisionWrapper } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
 export const Television = ({ show, center, reset, setHold }) => {

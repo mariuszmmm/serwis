@@ -1,4 +1,4 @@
-import zmywarka from "../../../assets/images/serwis-zmywarek.png";
+import zmywarka from "../../../assets/images/serwis-zmywarek.webp";
 import { DishwasherWrapper, Image } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
 export const Dishwasher = ({ show, center, reset, setHold }) => {

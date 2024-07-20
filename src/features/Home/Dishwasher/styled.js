@@ -74,10 +74,10 @@ export const Image = styled.img`
   transform: scale(70%);
   filter: drop-shadow(10px 10px 15px rgba(40, 40, 40, 0.7))
     drop-shadow(0px 20px 30px rgba(40, 40, 40, 0.4));
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    transition: transform 0.2s ease-out, filter 0.2s ease-out;
 
   &:hover {
-    transform: scale(73%);
+    transform: scale(71%);
     filter: drop-shadow(10px 10px 15px rgba(255, 140, 0, 0.7));
   }
 
