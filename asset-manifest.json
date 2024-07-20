@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/static/js/main.3a5492dc.js",
+    "main.js": "/static/js/main.b2cc1114.js",
     "static/js/395.75f9f556.chunk.js": "/static/js/395.75f9f556.chunk.js",
     "static/js/453.8c8d5fe1.chunk.js": "/static/js/453.8c8d5fe1.chunk.js",
-    "static/media/naprawa-ekspresow.png": "/static/media/naprawa-ekspresow.80854c6e539a83b1cfc2.png",
-    "static/media/naprawa-pralki.png": "/static/media/naprawa-pralki.be9437890ed6f69c7805.png",
-    "static/media/serwis-zmywarek.png": "/static/media/serwis-zmywarek.4baad06506fc6c0d6aa5.png",
-    "static/media/serwis-telewizorow.png": "/static/media/serwis-telewizorow.0975993ea051a3c35495.png",
-    "static/media/serwis.jpg": "/static/media/serwis.fe1b951132b69a0d42f1.jpg",
+    "static/media/naprawa-ekspresow.webp": "/static/media/naprawa-ekspresow.959e0e5ba4cbc9e6f78c.webp",
+    "static/media/naprawa-pralki.webp": "/static/media/naprawa-pralki.d719c9f5bd49d28cce19.webp",
+    "static/media/serwis-zmywarek.webp": "/static/media/serwis-zmywarek.6756aae70caeaca2605e.webp",
+    "static/media/serwis-telewizorow.webp": "/static/media/serwis-telewizorow.dfa7afffc2e165d84733.webp",
+    "static/media/serwis.webp": "/static/media/serwis.1b7b2504558771c986cc.webp",
     "index.html": "/index.html",
     "static/media/address-card.svg": "/static/media/address-card.ad48aab6583f9fa11d0ddf3f75b68fc4.svg",
     "static/media/phone.svg": "/static/media/phone.d37696f81df68533b4aac94848b6ac53.svg",
     "static/media/facebook.svg": "/static/media/facebook.4334b10756ac7b81275725bb2a620c59.svg",
     "static/media/envelope.svg": "/static/media/envelope.ab11e705408a27da262bcf133e6d101c.svg",
-    "main.3a5492dc.js.map": "/static/js/main.3a5492dc.js.map",
+    "main.b2cc1114.js.map": "/static/js/main.b2cc1114.js.map",
     "395.75f9f556.chunk.js.map": "/static/js/395.75f9f556.chunk.js.map",
     "453.8c8d5fe1.chunk.js.map": "/static/js/453.8c8d5fe1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3a5492dc.js"
+    "static/js/main.b2cc1114.js"
   ]
 }
