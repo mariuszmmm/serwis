@@ -51,6 +51,7 @@ export const StyledLink = styled(Button).attrs({ as: "a" })`
         $hidden &&
         css`
           opacity: 0;
+          pointer-events: none;
         `}
 
       @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {

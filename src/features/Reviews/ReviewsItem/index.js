@@ -9,14 +9,14 @@ import {
   Data,
 } from "./styled";
 
-export const ReviewsItem = ({ item }) => {
+export const ReviewsItem = ({ item, api }) => {
   return (
-    <ItemWrapper>
+    <ItemWrapper >
       <Header>
         <Photo src={item.profile_photo_url ? item.profile_photo_url : ""} />
         <Data >
           <Author>{item.author_name}</Author>
-          <Time time={item.time} />
+          <Time time={item.time} api={api} />
         </Data>
       </Header >
       <Stars rating={item.rating} />
