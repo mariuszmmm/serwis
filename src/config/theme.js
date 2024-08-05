@@ -19,5 +19,7 @@ export const theme = {
     tableHeader: "#252525",
     flamingo: "#eb5c20",
     mineShaft: "#211c1c",
+    start_1: "#ffbc00",
+    start_2: "#d9d7d5",
   },
 };

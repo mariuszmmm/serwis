@@ -1,6 +1,6 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-export const HemletForTestimonials = () => (
+export const HemletForReviews = () => (
   <HelmetProvider>
     <div>
       <Helmet>

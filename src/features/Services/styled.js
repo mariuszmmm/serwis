@@ -22,10 +22,10 @@ export const ServicesTitle = styled.h1`
   font-size: clamp(1.5rem, 3vw, 3rem);
 `;
 
-export const ServiceIcon = styled.img`
-  width: 200px;
-  height: 200px;
-`;
+// export const ServiceIcon = styled.img`
+//   width: 200px;
+//   height: 200px;
+// `;
 
 export const ServiceTitle = styled.h2`
   text-align: left;
