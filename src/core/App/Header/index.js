@@ -7,7 +7,26 @@ import {
 } from "./styled";
 import { serwis } from "../../../utils/serwis";
 import { StyledLink } from "../../../common/Buttons";
+import { useEffect, useState } from "react";
 export const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <HeaderWrapper>
       <HeaderContainer>
@@ -34,7 +53,7 @@ export const Header = () => {
             </li>
           </ul>
         </Nav>
-        <StyledLink href={serwis.url.addTestimonial} $opinia>
+        <StyledLink href={serwis.url.addTestimonial} $opinia $hidden={scrolled}>
           Wystaw opinię
         </StyledLink>
       </HeaderContainer>

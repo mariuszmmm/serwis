@@ -44,6 +44,14 @@ export const StyledLink = styled(Button).attrs({ as: "a" })`
       transform: translate(0, calc(100% + 30px));
       font-size: clamp(0.3rem, 1.6vw, 0.9rem);
       font-weight: 600;
+      opacity: 1;
+      transition: opacity 0.2s ease;
+
+      ${({ $hidden }) =>
+        $hidden &&
+        css`
+          opacity: 0;
+        `}
 
       @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
         right: 13px;
