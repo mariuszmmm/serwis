@@ -24,10 +24,10 @@ export const ServicesTitle = styled.h1`
 `;
 
 export const Photo = styled.img`
-  width: 30vw;
-  max-width: 30%;
-  float: right;
-  margin: 10px 0 0 20px;
+  width: 15vw;
+  max-width: 70%;
+  margin: clamp(20px, 1vw, 40px);
+  margin-top: 50px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     display: none;
@@ -41,6 +41,7 @@ export const ServiceTitle = styled.h2`
   display: flex;
   align-items: center;
   gap: 6px;
+  grid-area: header;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     text-align: center; 
@@ -48,6 +49,7 @@ export const ServiceTitle = styled.h2`
 `;
 
 export const Emoticon = styled.img`
+grid-area: photo;
   width: clamp(1.8rem, 4vw, 2.8rem);
   height: clamp(1.8rem, 4vw, 2.8rem);
 
@@ -57,6 +59,7 @@ export const Emoticon = styled.img`
 `;
 
 export const ServiceText = styled.p`
+  grid-area: text;
   line-height: 1.8;
   font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   text-align: justify;
@@ -67,6 +70,10 @@ export const ServiceText = styled.p`
 `;
 
 export const ServiceItem = styled.div`
+  display: grid;
+  grid-template-areas: "header header"
+                        "text photo"
+                        ;
   margin: 0 0 100px;
   scroll-margin-top: clamp(4rem, 7vw, 5.5rem);
   position: relative;
