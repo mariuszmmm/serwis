@@ -17,6 +17,7 @@ export const CoffeeMachineWrapper = styled.div`
     !$show &&
     css`
       z-index: -1;
+      pointer-events: none;
     `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {

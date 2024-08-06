@@ -40,7 +40,7 @@ export const serwis = {
       "author_name": "Piotr Wilgucki",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJU1mIRg3Pw30tT3pKe9spQQAxzer6xvc5g5pK2t6r8qEK5Y2g=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
-      "text": "Serwis rzetelny, szybki i cenowo bardzo dobry. Pralka działa bez zarzutów po dziś dzień. Polecam :)",
+      "text": "Serwis rzetelny, szybki i cenowo bardzo dobry. Pralka działa bez zarzutów po dziś dzień. Polecam.",
       "time": 1685355696,
     }
   ],

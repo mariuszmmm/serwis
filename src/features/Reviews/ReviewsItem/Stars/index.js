@@ -2,7 +2,7 @@ import { Star, StarsWrapper } from "./styled";
 
 export const Stars = ({ rating }) => {
   return (
-    <StarsWrapper>
+    rating && <StarsWrapper>
       <Star $active={rating >= 1} />
       <Star $active={rating >= 2} />
       <Star $active={rating >= 3} />

@@ -17,36 +17,37 @@ export const TelevisionWrapper = styled.div`
     !$show &&
     css`
       z-index: -1;
+      pointer-events: none;
     `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-880px) translateY(-100px) scale(60%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-740px) translateY(-240px) scale(35%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-680px) translateY(-260px) scale(25%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-630px) translateY(-290px) scale(20%);
       `}
   }

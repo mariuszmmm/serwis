@@ -60,6 +60,7 @@ export const StyledNavLink = styled(NavLink)`
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 5px 3px;
     border-radius: 2px;
+    margin: 0 1px;
   }
 
   &.active,

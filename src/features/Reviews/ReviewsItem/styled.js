@@ -2,7 +2,7 @@ import styled from "styled-components";
 import logoGoogle from "../../../assets/images/logoGoogle.png";
 
 export const ItemWrapper = styled.div`
-  margin: 0 20px 40px;
+  margin: 0 20px 20px;
   background-color: white;
   color: black;
   border-radius: 15px;
@@ -51,6 +51,11 @@ export const Text = styled.p`
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   margin: 0;
   text-align: justify;
+  text-justify: inter-word;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    text-align: left; 
+  }
 `;
 
 

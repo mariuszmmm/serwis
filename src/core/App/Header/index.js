@@ -13,7 +13,7 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 20) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -30,7 +30,7 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderContainer>
-        <Logo to="/">Serwis RTV i&nbsp;AGD</Logo>
+        <Logo to="/">Serwis RTV&nbsp;i&nbsp;AGD</Logo>
         <Nav>
           <ul>
             <li>

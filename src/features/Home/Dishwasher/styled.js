@@ -17,36 +17,37 @@ export const DishwasherWrapper = styled.div`
     !$show &&
     css`
       z-index: -1;
+      pointer-events: none;
     `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(120px) translateY(-100px) scale(60%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(0px) translateY(-240px) scale(40%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-60px) translateY(-270px) scale(30%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-100px) translateY(-300px) scale(20%);
       `}
   }

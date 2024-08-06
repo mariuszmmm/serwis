@@ -8,7 +8,7 @@ export const Time = ({ time, api }) => {
 
   return (
     <FormattedDate>
-      {formattedDate}
+      {time ? formattedDate : ""}
     </FormattedDate>
   );
 }

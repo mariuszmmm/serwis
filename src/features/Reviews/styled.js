@@ -14,7 +14,7 @@ export const ReviewsSection = styled.section`
 
 export const ReviewsContainer = styled.div`
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 `;
 
 export const ReviewsTitle = styled.h1`

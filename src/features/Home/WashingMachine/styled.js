@@ -17,36 +17,37 @@ export const WashingMachineWrapper = styled.div`
     !$show &&
     css`
       z-index: -1;
+      pointer-events: none;
     `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-700px) translateY(-100px) scale(60%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-570px) translateY(-230px) scale(40%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-520px) translateY(-260px) scale(30%);
       `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     ${({ $center }) =>
-      !$center &&
-      css`
+    !$center &&
+    css`
         transform: translateX(-470px) translateY(-290px) scale(20%);
       `}
   }
