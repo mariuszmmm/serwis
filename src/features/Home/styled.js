@@ -56,7 +56,7 @@ export const HeroContainer = styled.header`
 `;
 
 export const HeroTitle = styled.h1`
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: clamp(1.5rem, 3vw, 3rem);
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
@@ -65,7 +65,7 @@ export const HeroTitle = styled.h1`
   }
 
   @media (orientation: portrait) {
-    /* font-size: 1.5rem; */
+    margin-bottom: 20px;
   }
 `;
 

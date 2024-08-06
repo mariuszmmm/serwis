@@ -15,31 +15,63 @@ export const ServicesSection = styled.section`
 export const ServicesContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
 `;
 
 export const ServicesTitle = styled.h1`
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   font-size: clamp(1.5rem, 3vw, 3rem);
 `;
 
-// export const ServiceIcon = styled.img`
-//   width: 200px;
-//   height: 200px;
-// `;
+export const Photo = styled.img`
+  width: 30vw;
+  max-width: 30%;
+  float: right;
+  margin: 10px 0 0 20px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    display: none;
+  }
+`;
 
 export const ServiceTitle = styled.h2`
   text-align: left;
   margin-bottom: 10px;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    text-align: center; 
+  }
+`;
+
+export const Emoticon = styled.img`
+  width: clamp(1.8rem, 4vw, 2.8rem);
+  height: clamp(1.8rem, 4vw, 2.8rem);
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    display: none;
+  }
 `;
 
 export const ServiceText = styled.p`
-  line-height: 1.6;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.8;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   text-align: justify;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    text-align: left; 
+  }
 `;
 
 export const ServiceItem = styled.div`
-  margin: 0 20px 80px;
+  margin: 0 0 100px;
   scroll-margin-top: clamp(4rem, 7vw, 5.5rem);
+  position: relative;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    margin: 0 0 50px;
+  }
 `;

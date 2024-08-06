@@ -2,14 +2,18 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   position: relative;
-  /* max-width: 600px; */
-  margin: 0 20px 80px;
+  margin: 0 0 50px;
   text-align: left;
+  width: 100%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    margin: 0 0 30px;
+  }
 `;
 
 export const Label = styled.label`
   display: block;
-  font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   margin-bottom: 10px;
 `;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import logoGoogle from "../../../assets/images/logoGoogle.png";
 
 export const ItemWrapper = styled.div`
-  margin: 0 20px 20px;
+  margin: 0 0 20px;
   background-color: white;
   color: black;
   border-radius: 15px;
@@ -48,7 +48,7 @@ export const Author = styled.h3`
 export const Text = styled.p`
   line-height: 1.8;
   margin-bottom: 20px;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   margin: 0;
   text-align: justify;
   text-justify: inter-word;

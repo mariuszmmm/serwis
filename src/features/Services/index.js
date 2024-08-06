@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import {
+  Emoticon,
+  Photo,
   ServiceItem,
   ServiceText,
   ServiceTitle,
@@ -8,6 +10,11 @@ import {
   ServicesTitle,
 } from "./styled";
 import { HemletForServices } from "./HemletForServices";
+import pralka from "../../assets/images/naprawa-pralki.webp";
+import zmywarka from "../../assets/images/serwis-zmywarek.webp";
+import ekspres from "../../assets/images/naprawa-ekspresow.webp";
+import telewizor from "../../assets/images/serwis-telewizorow.webp";
+import emoticon from "../../assets/images/emoticon.png"
 
 export const Services = () => {
   const [show, setShow] = useState(false);
@@ -22,7 +29,8 @@ export const Services = () => {
         <ServicesTitle>Zakres usług</ServicesTitle>
         <main>
           <ServiceItem id="naprawa-pralek">
-            <ServiceTitle>Naprawa pralek</ServiceTitle>
+            <ServiceTitle>Naprawa pralek<Emoticon src={emoticon} /></ServiceTitle>
+            <Photo src={pralka} alt="naprawa pralek" />
             <ServiceText>
               Kompleksowe usługi naprawy pralek automatycznych wszystkich marek.
               Bez&nbsp;względu na&nbsp;to, czy&nbsp;Twoja pralka
@@ -36,7 +44,8 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-zmywarek">
-            <ServiceTitle>Naprawa zmywarek</ServiceTitle>
+            <ServiceTitle>Naprawa zmywarek<Emoticon src={emoticon} /></ServiceTitle>
+            <Photo src={zmywarka} alt="naprawa zmywarek" />
             <ServiceText>
               Specjalistyczna naprawa zmywarek różnych marek, gwarantująca ich
               długotrwałe i&nbsp;efektywne działanie. Problemy takie jak brak
@@ -50,7 +59,8 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-ekspresów">
-            <ServiceTitle>Naprawa ekspresów do kawy</ServiceTitle>
+            <ServiceTitle>Naprawa ekspresów do kawy<Emoticon src={emoticon} /></ServiceTitle>
+            <Photo src={ekspres} alt="naprawa ekspresow" />
             <ServiceText>
               Profesjonalna naprawa ekspresów do&nbsp;kawy, niezależnie od marki
               i&nbsp;modelu. Czy Twój ekspres do kawy przestał działać, nie
@@ -63,7 +73,8 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-telewizorów">
-            <ServiceTitle>Naprawa telewizorów</ServiceTitle>
+            <ServiceTitle>Naprawa telewizorów<Emoticon src={emoticon} /></ServiceTitle>
+            <Photo src={telewizor} alt="naprawa telewizorow" />
             <ServiceText>
               Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek,
               od&nbsp;tradycyjnych po nowoczesne modele smart. Naprawiam
@@ -77,7 +88,7 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem>
-            <ServiceTitle>Serwis i&nbsp;konserwacja</ServiceTitle>
+            <ServiceTitle>Serwis i&nbsp;konserwacja ⚙️</ServiceTitle>
             <ServiceText>
               Świadczę kompleksowe usługi serwisowe i&nbsp;konserwacyjne
               urządzeń&nbsp;AGD. Zapewniam szybką i&nbsp;skuteczną naprawę
@@ -88,7 +99,7 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem>
-            <ServiceTitle>Konsultacje i&nbsp;doradztwo</ServiceTitle>
+            <ServiceTitle>Konsultacje i&nbsp;doradztwo 📞</ServiceTitle>
             <ServiceText>
               Oferuję profesjonalne konsultacje i&nbsp;doradztwo w&nbsp;zakresie
               serwisu urządzeń&nbsp;AGD. Dzięki wieloletniemu doświadczeniu,

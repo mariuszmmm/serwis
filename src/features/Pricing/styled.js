@@ -15,11 +15,11 @@ export const PricingSection = styled.section`
 export const PricingContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
 `;
 
 export const PricingTitle = styled.h1`
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   font-size: clamp(1.5rem, 3vw, 3rem);
 `;
 
