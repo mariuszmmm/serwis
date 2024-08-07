@@ -21,7 +21,7 @@ export const Footer = () => {
             <PhoneIcon />
             <FooterText>{serwis.phone} </FooterText>
           </StyledLink>
-          <StyledLink href={`mailto:${serwis.email}}`}>
+          <StyledLink href={`mailto:${serwis.email}`}>
             <EmailIcon />
             <FooterText>{serwis.email} </FooterText>
           </StyledLink>
