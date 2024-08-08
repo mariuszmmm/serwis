@@ -4,7 +4,7 @@ export const HelmetForHome = () => (
   <HelmetProvider>
     <div>
       <Helmet>
-        <title>Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy</title>
+        <title>Naprawa telewizorów ✔, pralek ✔, zmywarek ✔, ekspresów do kawy ✔</title>
         <meta
           name="description"
           content="Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa."

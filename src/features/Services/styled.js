@@ -3,7 +3,8 @@ import styled, { css } from "styled-components";
 export const ServicesSection = styled.section`
   padding: 100px 0;
   text-align: center;
-  min-height: 100vh;  opacity: 0;
+  min-height: 100vh;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
   ${({ $show }) =>
     $show &&
@@ -42,14 +43,17 @@ export const ServiceTitle = styled.h2`
   align-items: center;
   gap: 6px;
   grid-area: header;
-
+  
+  span{
+    color: ${({ theme }) => theme.color.check};
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    text-align: center; 
+    text-align: center;
   }
 `;
 
 export const Emoticon = styled.img`
-grid-area: photo;
+  grid-area: photo;
   width: clamp(1.8rem, 4vw, 2.8rem);
   height: clamp(1.8rem, 4vw, 2.8rem);
 
@@ -65,19 +69,18 @@ export const ServiceText = styled.p`
   text-align: justify;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    text-align: left; 
+    text-align: left;
   }
 `;
 
 export const ServiceItem = styled.div`
   display: grid;
-  grid-template-areas: "header header"
-                        "text photo"
-                        ;
+  grid-template-areas:
+    "header header"
+    "text photo";
   margin: 0 0 100px;
   scroll-margin-top: clamp(4rem, 7vw, 5.5rem);
-  position: relative;
-
+ 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     margin: 0 0 50px;
   }

@@ -29,7 +29,7 @@ export const Services = () => {
         <ServicesTitle>Zakres usług</ServicesTitle>
         <main>
           <ServiceItem id="naprawa-pralek">
-            <ServiceTitle>Naprawa pralek<Emoticon src={emoticon} /></ServiceTitle>
+            <ServiceTitle><span>✔</span>&nbsp;Naprawa pralek<Emoticon src={emoticon} /></ServiceTitle>
             <Photo src={pralka} alt="naprawa pralek" />
             <ServiceText>
               Kompleksowe usługi naprawy pralek automatycznych wszystkich marek.
@@ -44,7 +44,7 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-zmywarek">
-            <ServiceTitle>Naprawa zmywarek<Emoticon src={emoticon} /></ServiceTitle>
+            <ServiceTitle><span>✔</span>&nbsp;Naprawa zmywarek<Emoticon src={emoticon} /></ServiceTitle>
             <Photo src={zmywarka} alt="naprawa zmywarek" />
             <ServiceText>
               Specjalistyczna naprawa zmywarek różnych marek, gwarantująca ich
@@ -59,7 +59,7 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-ekspresów">
-            <ServiceTitle>Naprawa ekspresów do kawy<Emoticon src={emoticon} /></ServiceTitle>
+            <ServiceTitle><span>✔</span>&nbsp;Naprawa ekspresów do kawy<Emoticon src={emoticon} /></ServiceTitle>
             <Photo src={ekspres} alt="naprawa ekspresow" />
             <ServiceText>
               Profesjonalna naprawa ekspresów do&nbsp;kawy, niezależnie od marki
@@ -73,7 +73,7 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-telewizorów">
-            <ServiceTitle>Naprawa telewizorów<Emoticon src={emoticon} /></ServiceTitle>
+            <ServiceTitle><span>✔</span>&nbsp;Naprawa telewizorów<Emoticon src={emoticon} /></ServiceTitle>
             <Photo src={telewizor} alt="naprawa telewizorow" />
             <ServiceText>
               Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek,
@@ -88,7 +88,7 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem>
-            <ServiceTitle>Serwis i&nbsp;konserwacja ⚙️</ServiceTitle>
+            <ServiceTitle><span>✔</span>&nbsp;Serwis i&nbsp;konserwacja</ServiceTitle>
             <ServiceText>
               Świadczę kompleksowe usługi serwisowe i&nbsp;konserwacyjne
               urządzeń&nbsp;AGD. Zapewniam szybką i&nbsp;skuteczną naprawę
@@ -99,7 +99,7 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem>
-            <ServiceTitle>Konsultacje i&nbsp;doradztwo 📞</ServiceTitle>
+            <ServiceTitle><span>✔</span>&nbsp;Konsultacje i&nbsp;doradztwo</ServiceTitle>
             <ServiceText>
               Oferuję profesjonalne konsultacje i&nbsp;doradztwo w&nbsp;zakresie
               serwisu urządzeń&nbsp;AGD. Dzięki wieloletniemu doświadczeniu,
