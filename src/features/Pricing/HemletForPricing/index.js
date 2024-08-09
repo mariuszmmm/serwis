@@ -147,63 +147,6 @@ export const HemletForPricing = () => (
           "paymentAccepted": [
             "Cash"
           ],
-          "review": [
-            {
-              "@type": "Review",
-              "author": "m p",
-              "reviewBody": "Super profesjonalizm, przystępne ceny i szybkie terminy - zdecydowanie polecam",
-              "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "5",
-                "worstRating": "1"
-              }
-            },
-            {
-              "@type": "Review",
-              "author": "Agti Wo",
-              "reviewBody": "Pan bardzo punktualny, zaangażowany. Szybko i trafnie  zdiagnozował problem. Usługa wykonana bardzo sprawnie i rzetelnie - pralka działa jak należy! Polecam serdecznie! Agata Wowk-Musiał",
-              "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "5",
-                "worstRating": "1"
-              }
-            },
-            {
-              "@type": "Review",
-              "author": "Gabriel Gwiazdoń",
-              "reviewBody": "Bardzo rzetelny serwis, polecam! Miałem problem z pralką, Pan znalazł termin w zasadzie od ręki, w dniu naprawy na miejscu znalazł i usunął usterkę, jestem bardzo zadowolony.",
-              "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "5",
-                "worstRating": "1"
-              }
-            },
-            {
-              "@type": "Review",
-              "author": "EL-METR INSTALACJE Zbigniew Banasiewicz",
-              "reviewBody": "Pan z ogromną wiedzą i doświadczeniem. Już kilka napraw za nami , wszystko naprawione i działa. Polecam Pana Piotra. Najlepszy elektronik w mieście. Pozdrawiam",
-              "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "5",
-                "worstRating": "1"
-              }
-            },
-            {
-              "@type": "Review",
-              "author": "Piotr Wilgucki",
-              "reviewBody": "Serwis rzetelny, szybki i cenowo bardzo dobry. Pralka działa bez zarzutów po dziś dzień. Polecam",
-              "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "5",
-                "worstRating": "1"
-              }
-            },
-          ],
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.6",
@@ -227,32 +170,8 @@ export const HemletForPricing = () => (
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "O mnie",
-              "item": "https://naprawaprzemysl.pl/o-mnie"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Usługi",
-              "item": "https://naprawaprzemysl.pl/uslugi"
-            },
-            {
-              "@type": "ListItem",
-              "position": 4,
               "name": "Cennik",
               "item": "https://naprawaprzemysl.pl/cennik"
-            },
-            {
-              "@type": "ListItem",
-              "position": 5,
-              "name": "Opinie",
-              "item": "https://naprawaprzemysl.pl/opinie"
-            },
-            {
-              "@type": "ListItem",
-              "position": 6,
-              "name": "Kontakt",
-              "item": "https://naprawaprzemysl.pl/kontakt"
             }
           ]
         })}

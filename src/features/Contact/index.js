@@ -40,7 +40,7 @@ export const Contact = () => {
           </ContactText>
           <ContactText>
             <span>e-mail:</span>{" "}
-            <MailLink href={`mailto:${serwis.email}}`}>{serwis.email}</MailLink>
+            <MailLink href={`mailto:${serwis.email}`}>{serwis.email}</MailLink>
           </ContactText>
           <br />
           <ContactText>Zapraszamy od poniedziałku do piątku</ContactText>
