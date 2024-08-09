@@ -62,42 +62,86 @@ export const HemletForPricing = () => (
           ],
           "logo": "https://naprawaprzemysl.pl/static/media/serwis.1b7b2504558771c986cc.webp",
           "description": "Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa.",
-          "service": [
+          "offers": [
             {
-              "@type": "Service",
-              "serviceType": "Naprawa pralek",
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "serviceType": "Naprawa pralek"
+              },
               "areaServed": {
                 "@type": "Place",
                 "name": "Przemyśl"
               },
-              "description": "Cena naprawy pralek zaczyna się od 100 PLN. Koszt może wzrosnąć w zależności od stopnia skomplikowania naprawy."
+              "priceCurrency": "PLN",
+              "price": "100",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "100",
+                "priceCurrency": "PLN",
+                "priceType": "Starting from",
+                "priceRange": "100-*"
+              }
             },
             {
-              "@type": "Service",
-              "serviceType": "Naprawa zmywarek",
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "serviceType": "Naprawa zmywarek"
+              },
               "areaServed": {
                 "@type": "Place",
                 "name": "Przemyśl"
               },
-              "description": "Cena naprawy zmywarek zaczyna się od 100 PLN. Koszt może wzrosnąć w zależności od stopnia skomplikowania naprawy."
+              "priceCurrency": "PLN",
+              "price": "100",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "100",
+                "priceCurrency": "PLN",
+                "priceType": "Starting from",
+                "priceRange": "100-*"
+              }
             },
             {
-              "@type": "Service",
-              "serviceType": "Naprawa ekspresów do kawy",
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "serviceType": "Naprawa ekspresów do kawy"
+              },
               "areaServed": {
                 "@type": "Place",
                 "name": "Przemyśl"
               },
-              "description": "Cena naprawy ekspresów do kawy zaczyna się od 120 PLN. Koszt może wzrosnąć w zależności od stopnia skomplikowania naprawy."
+              "priceCurrency": "PLN",
+              "price": "120",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "120",
+                "priceCurrency": "PLN",
+                "priceType": "Starting from",
+                "priceRange": "120-*"
+              }
             },
             {
-              "@type": "Service",
-              "serviceType": "Naprawa telewizorów",
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "serviceType": "Naprawa telewizorów"
+              },
               "areaServed": {
                 "@type": "Place",
                 "name": "Przemyśl"
               },
-              "description": "Cena naprawy telewizorów zaczyna się od 150 PLN. Koszt może wzrosnąć w zależności od stopnia skomplikowania naprawy."
+              "priceCurrency": "PLN",
+              "price": "150",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "150",
+                "priceCurrency": "PLN",
+                "priceType": "Starting from",
+                "priceRange": "150-*"
+              }
             }
           ],
           "paymentAccepted": [
